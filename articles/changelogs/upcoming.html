@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#110-release">11.0-Release</a><ul class="level2 nav bs-docs-sidenav 110-release"><li><a href="#launcher">Launcher</a></li><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#110-release">11.0-Release</a><ul class="level2 nav bs-docs-sidenav 110-release"><li><a href="#launcher">Launcher</a></li><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a><ul class="level4 nav bs-docs-sidenav added-2"><li><a href="#c-module">C# Module</a><ul class="level5 nav bs-docs-sidenav c-module"><li><a href="#contains-breaking-changes">Contains Breaking changes</a></li></ul></li></ul></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -137,6 +137,10 @@
 <div class="WARNING">
 <h5>Warning</h5>
 <p>This update isn't released yet.</p>
+</div>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>This update contains <strong>breaking changes</strong>, which can potentially break the functionality of your gamemode, please verify and change accordingly.</p>
 </div>
 <h2 id="launcher">Launcher</h2>
 <div class="nohljsln">
@@ -206,6 +210,16 @@
 <pre><code class="lang-yaml">- Updated nodeJS launch options to support native ECMAScript module loader by default (removed experimental loader warning)
   → The js-module automatically detects esm files if one of the described cases are fullfilled, see: https://nodejs.org/docs/latest-v17.x/api/esm.html#enabling
 - Added extra-cli-args to server.cfg
+</code></pre>
+</div>
+<h2 id="c-module">C# Module</h2>
+<h3 id="contains-breaking-changes"><span style="color: red;">Contains Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Breaking Change: Async baseobject classes now don't have generic arguments (`AsyncPlayer&lt;IPlayer&gt;` -&gt; `AsyncPlayer`)
+- Added new optional API that makes any API call on any thread fully safe, more info in csharp Discord channel pinned messages
+- Fixed OnPlayerDamage async attribute event handler
+- Added Alt.GetEntityById
+- Added Alt.Core.IsMainThread
 </code></pre>
 </div>
 </article>
