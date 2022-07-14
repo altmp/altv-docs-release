@@ -50490,7 +50490,7 @@
       "output": {
         ".html": {
           "relative_path": "gta/articles/vehicle/mods.html",
-          "hash": "rDMEEjgSzhL6wUMwuKJvtTKSnuGjnkQnd5hGpRgBM0Q="
+          "hash": "FZpv/LbBCRdVCYC3ALq0/90/T0sZstVvB2VOfLyr8tI="
         }
       },
       "is_incremental": false,
@@ -50503,6 +50503,18 @@
         ".html": {
           "relative_path": "gta/articles/vehicle/types.html",
           "hash": "Xvj/Sii7iZCgJiTbAiJS/kBLdaQyurC1Alkp0t+aGMo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/wheels.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/wheels.html",
+          "hash": "+joHGnK/n014uHd15qizJX07JtBt3LHTig/P0rTlWdI="
         }
       },
       "is_incremental": false,
@@ -63414,7 +63426,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "flpZvhfFUkSHx0Dp/fh3fzg9TDZwSnqQuKwvwG7O5pk="
+          "hash": "59Gg/kzYMwxDzJG96lFGUw2u3v824u+n6gwtQutT28w="
         }
       },
       "is_incremental": false,

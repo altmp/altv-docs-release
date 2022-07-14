@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Vehicle Mods </title>
+    <title>Vehicle wheels </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Vehicle Mods ">
+    <meta name="title" content="Vehicle wheels ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#vehicle-mods">Vehicle Mods</a><ul class="level2 nav bs-docs-sidenav vehicle-mods"><li><a href="#categories">Categories</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#vehicle-wheels">Vehicle wheels</a><ul class="level2 nav bs-docs-sidenav vehicle-wheels"><li><a href="#setting-wheels">Setting wheels</a></li><li><a href="#customizing-wheels">Customizing wheels</a><ul class="level3 nav bs-docs-sidenav customizing-wheels"><li><a href="#methods">Methods</a></li><li><a href="#sample">Sample</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -127,337 +127,158 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs-gta/blob/master/articles/vehicle/mods.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/altmp/altv-docs-gta/blob/master/articles/vehicle/wheels.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="vehicle-mods">Vehicle Mods</h1>
+<h1 id="vehicle-wheels">Vehicle wheels</h1>
 
+<h2 id="setting-wheels">Setting wheels</h2>
+<p>Vehicle wheels should be set using the <code>SetWheels(wheelType, wheelId)</code> method provided by alt:V.
+This method is available to the respective vehicle instance.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>If there are no further comments, the preferred methods are respectively setMod and getMod.</p>
+<p>For cars the <code>SetWheels(wheelType, wheelId)</code> method is sufficient to change all 4 wheels. For motorcycles additionally
+the <code>SetRearWheels(wheelId)</code> method is available.</p>
 </div>
-<h2 id="categories">Categories</h2>
+<p><strong>Wheel types</strong></p>
 <table>
 <thead>
 <tr>
 <th>Id</th>
-<th>Name</th>
-<th>Value Range</th>
-<th>Preferred setter</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>0</td>
-<td>Spoilers</td>
-<td>0+</td>
-<td></td>
+<td>Sport</td>
 </tr>
 <tr>
 <td>1</td>
-<td>Front Bumper</td>
-<td>0+</td>
-<td></td>
+<td>Muscle</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Rear Bumper</td>
-<td>0+</td>
-<td></td>
+<td>Lowrider</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Side Skirt</td>
-<td>0+</td>
-<td></td>
+<td>SUV</td>
 </tr>
 <tr>
 <td>4</td>
-<td>Exhaust</td>
-<td>0+</td>
-<td></td>
+<td>Offroad</td>
 </tr>
 <tr>
 <td>5</td>
-<td>Frame</td>
-<td>0+</td>
-<td></td>
+<td>Tuner</td>
 </tr>
 <tr>
 <td>6</td>
-<td>Grille</td>
-<td>0+</td>
-<td></td>
+<td>Bike Wheels</td>
 </tr>
 <tr>
 <td>7</td>
-<td>Bonnet</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>8</td>
-<td>Wing (Left wing)</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>9</td>
-<td>Right wing</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>10</td>
-<td>Roof</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>11</td>
-<td>Engine</td>
-<td>0 - 4</td>
-<td></td>
-</tr>
-<tr>
-<td>12</td>
-<td>Brakes</td>
-<td>0 - 3</td>
-<td></td>
-</tr>
-<tr>
-<td>13</td>
-<td>Transmission</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>14</td>
-<td>Horns</td>
-<td>0 - 51</td>
-<td></td>
-</tr>
-<tr>
-<td>15</td>
-<td>Suspension</td>
-<td>0 - 4</td>
-<td></td>
-</tr>
-<tr>
-<td>16</td>
-<td>Armor</td>
-<td>0 - 5</td>
-<td></td>
-</tr>
-<tr>
-<td>17</td>
-<td>-</td>
-<td>0 - 1</td>
-<td></td>
-</tr>
-<tr>
-<td>18</td>
-<td>Turbo</td>
-<td>0 - 1</td>
-<td></td>
-</tr>
-<tr>
-<td>19</td>
-<td>-</td>
-<td>0 - 1</td>
-<td></td>
-</tr>
-<tr>
-<td>20</td>
-<td>Custom tire smoke</td>
-<td>0 - 1</td>
-<td></td>
-</tr>
-<tr>
-<td>21</td>
-<td>-</td>
-<td>0 - 1</td>
-<td></td>
-</tr>
-<tr>
-<td>22</td>
-<td>Xenon</td>
-<td>0 - 1</td>
-<td></td>
-</tr>
-<tr>
-<td>23</td>
-<td>Front Wheels</td>
-<td>0+</td>
-<td>IVehicle.setWheels <a href="http://docs.altv.mp/js/api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setWheels">JS</a> <a href="http://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.IVehicle.html#AltV_Net_Elements_Entities_IVehicle_SetWheels_System_Byte_System_Byte_">C#</a></td>
-</tr>
-<tr>
-<td>24</td>
-<td>Back Wheels (only motorcycles &amp; tornado6)</td>
-<td>0+</td>
-<td>IVehicle.setRearWheels <a href="http://docs.altv.mp/js/api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_setRearWheels">JS</a> <a href="http://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.IVehicle.html#AltV_Net_Elements_Entities_IVehicle_RearWheel">C#</a></td>
-</tr>
-<tr>
-<td>25</td>
-<td>Plate Holders</td>
-<td>0+</td>
-<td>IVehicle.numberPlateIndex <a href="http://docs.altv.mp/js/api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_numberPlateIndex">JS</a> <a href="http://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.IVehicle.html#AltV_Net_Elements_Entities_IVehicle_NumberplateIndex">C#</a></td>
-</tr>
-<tr>
-<td>26</td>
-<td>Plate Vanity</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>27</td>
-<td>Trim Design</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>28</td>
-<td>Ornaments</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>30</td>
-<td>Dial Design</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>31</td>
-<td>Door Interior</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>32</td>
-<td>Seats</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>33</td>
-<td>Steering Wheel</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>34</td>
-<td>Shift Lever</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>35</td>
-<td>Plaques</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>36</td>
-<td>Rear Shelf</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>37</td>
-<td>Trunk</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>38</td>
-<td>Hydraulics</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>39</td>
-<td>Engine Block</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>40</td>
-<td>Air Filter</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>41</td>
-<td>Strut Bar</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>42</td>
-<td>Arch Cover</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>43</td>
-<td>Antenna</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>44</td>
-<td>Exterior Parts</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>45</td>
-<td>Tank</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>46</td>
-<td>Door</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>47</td>
-<td>Wheels Rear Or Hydraulics</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>48</td>
-<td>Livery</td>
-<td>0+</td>
-<td></td>
-</tr>
-<tr>
-<td>66</td>
-<td>Primary Color</td>
-<td>0+</td>
-<td>IVehicle.primaryColor <a href="http://docs.altv.mp/js/api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_primaryColor">JS</a> <a href="http://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.IVehicle.html#AltV_Net_Elements_Entities_IVehicle_PrimaryColor">C#</a></td>
-</tr>
-<tr>
-<td>67</td>
-<td>Secondary Color</td>
-<td>0+</td>
-<td>IVehicle.secondaryColor <a href="http://docs.altv.mp/js/api/alt-server.Vehicle.html#_altmp_altv_types_alt_server_Vehicle_secondaryColor">JS</a> <a href="http://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.IVehicle.html#AltV_Net_Elements_Entities_IVehicle_SecondaryColor">C#</a></td>
+<td>High End</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Description</strong></p>
-<ul>
-<li>0 is always default value</li>
-<li>0+ means it depends on vehicle model</li>
-<li>Wheels Rear Or Hydraulics (47) can be tested on Slamvan3, real name isn't known yet</li>
-<li>The missing categories are most likely GTA:O features like explosive, insurance and tracker</li>
+<h2 id="customizing-wheels">Customizing wheels</h2>
+<h3 id="methods">Methods</h3>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Not all of the features have a visual effect and may have needed a combination to adjust the physics of the vehicle.
+Changes to the values should always be done in small steps.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Setter</th>
+<th>Getter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camber</td>
+<td><code>SetWheelCamber(wheelIndex, camber)</code></td>
+<td><code>GetWheelCamber(wheelIndex)</code></td>
+</tr>
+<tr>
+<td>Height</td>
+<td><code>SetWheelHeight(wheelIndex, height)</code></td>
+<td><code>GetWheelHeight(wheelIndex)</code></td>
+</tr>
+<tr>
+<td>Rim Radius</td>
+<td><code>SetWheelRimRadius(wheelIndex, radius)</code></td>
+<td><code>GetWheelRimRadius(wheelIndex)</code></td>
+</tr>
+<tr>
+<td>Track Width</td>
+<td><code>SetTrackWidth(wheelIndex, width)</code></td>
+<td><code>GetTrackWidth(wheelIndex)</code></td>
+</tr>
+<tr>
+<td>Tyre Radius</td>
+<td><code>SetTyreRadius(wheelIndex, radius)</code></td>
+<td><code>GetTyreRadius(wheelIndex)</code></td>
+</tr>
+<tr>
+<td>Tyre Width</td>
+<td><code>SetTyreWidth(wheelIndex, width)</code></td>
+<td><code>GetTyreWidth(wheelIndex)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sample">Sample</h3>
+<p>The example modifies a Sultan RS camber and track width:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-1" data-tab="tabid-1" tabindex="0" aria-selected="true">Server</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-2" data-tab="tabid-2" tabindex="-1">Client</a>
+</li>
 </ul>
+<section id="tabpanel_bHGHmlrG6S_tabid-1" role="tabpanel" data-tab="tabid-1">
+
+<pre><code class="lang-js">const veh = new alt.Vehicle(&quot;sultanrs&quot;, 0, 0, 72, 0, 0, 0);
+// As the data isn't synced by itself we need a way to sync it. The easiest way in this case is by using stream synced meta data.
+veh.setStreamSyncedMeta(&quot;wheelMod&quot;, {camber: -0.25, trackWidth: 0.85});
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">alt.on(&quot;gameEntityCreate&quot;, (entity) =&gt; {
+    // We need to reapply the values when the vehicle gets streamed again, so we check for the type of the entity and if it has the wheelMod meta data set
+    if (!(entity instanceof alt.Vehicle)) return;
+    if (!entity.hasStreamSyncedMeta(&quot;wheelMod&quot;)) return;
+    // To avoid duplicated code with the meta change event we move the modification part to it's own function
+    modWheels(entity, entity.getStreamSyncedMeta(&quot;wheelMod&quot;));
+});
+
+alt.on(&quot;streamSyncedMetaChange&quot;, (entity, key, value, oldValue) =&gt; {
+    // Checking conditions if we should apply the modifications
+    if (key !== &quot;wheelMod&quot;) return;
+    if (!(entity instanceof alt.Vehicle)) return;
+    modWheels(entity, value);
+});
+
+function modWheels(vehicle, data) {
+    // Going to use a loop as we need to apply the setters to all wheels
+    // This can be changed to e.g. only modify the front or back wheels
+    for (let i = 0; i &lt; vehicle.wheelsCount; i++) {
+        vehicle.setWheelCamber(i, data.camber);
+        vehicle.setWheelTrackWidth(i, data.trackWidth);
+    }
+}
+</code></pre>
+</section>
+</div>
 </article>
                     </div>
 
