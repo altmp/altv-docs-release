@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>11.0-Release </title>
+    <title>12.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="11.0-Release ">
+    <meta name="title" content="12.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#110-release">11.0-Release</a><ul class="level2 nav bs-docs-sidenav 110-release"><li><a href="#launcher">Launcher</a></li><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a><ul class="level4 nav bs-docs-sidenav added-2"><li><a href="#c-module">C# Module</a><ul class="level5 nav bs-docs-sidenav c-module"><li><a href="#contains-breaking-changes">Contains Breaking changes</a></li></ul></li></ul></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#120-release">12.0-Release</a><ul class="level2 nav bs-docs-sidenav 120-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,7 +132,7 @@
                                     </ul>
                                 </span>
 
-<h1 id="110-release">11.0-Release</h1>
+<h1 id="120-release">12.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
@@ -140,103 +140,12 @@
 </div>
 <div class="TIP">
 <h5>Tip</h5>
-<p>This update was released on 15.07.2022</p>
-</div>
-<div class="CAUTION">
-<h5>Caution</h5>
-<p>This update contains <strong>breaking changes</strong>, which can potentially break the functionality of your gamemode, please verify and change accordingly.</p>
-</div>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- 11.1:
-   - Fixed problems with streamSyncedMeta
-- 11.2:
-   - Fixed currentammo getter
-- 11.3:
-   - Crashes related to vehicle windows
-</code></pre>
-</div>
-<h2 id="launcher">Launcher</h2>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Fixed &quot;This PC&quot; crashes the game directory selection dialog
-- Fixed Startmenu shortcut
-- allow installation in appdata folder (default installation)
-- redesigned installation menu
-- improved high resolution support
-- added uninstaller
-- improved download progessbar on installation
-</code></pre>
+<p>This update was released on 26.07.2022</p>
 </div>
 <h2 id="client">Client</h2>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- weapondata api (https://docs.altv.mp/js/api/alt-client.WeaponData.html)
-- vehicle lockState, petrolTankHealth getter
-- focusdata api (overrideFocus, clearFocus, focusOverrideEntity, etc)
-- WheelCamber, WheelTrackWidth, WheelHeight, WheelTyreRadius, WheelRimRadius, WheelTyreWidth, fuelLevel, engineTemperature, oilLevel getter &amp; setter
-- persistent localstorage for early auth
-- loadDefaultIpls method
-- voiceControlsEnabled, rmlControlsEnabled getter
-- sender element to rmlui events
-</code></pre>
-</div>
-<h3 id="fixed">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- weapon auto swap flag disabled vehicle weapons
-- playPedAmbientSpeechWithVoiceNative native
-- RMLUI style property
-- vehicle gear setter
-- permission dialog for optional permissions
-- cinematic camera key in vehicles while idlecam flag used
-</code></pre>
-</div>
-<h2 id="server">Server</h2>
-<h3 id="added-1">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- isSpawned, discordID getter
-- player currentAnimationDict, currentAnimationName, currentInterior getter
-- improved client-files wildcard support in ressource.cfg
-- autoenable headlightcolor mod if headlightColor setter is used
-- autoenable tireSmokeColor mod if tireSmokeColor setter is used
-- isEntityIn colshape method with entityID
-- duplicatePlayers config entry (see [server config article](~/articles/configs/server.md))
-- vehicle lightState setter &amp; getter
-- vehicle setTimedExplosion method
-- vehicle timedExplosionTime, timedExplosionCulprit, hasTimedExplosion getter
-- playerInteriorChange event
-- optimized stream synced meta data
-</code></pre>
-</div>
-<h3 id="fixed-1">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Fix frozen and collision setter
-- Bicycles don't work sometimes
-- Size property doesn't work for areablip
-- playAmbientSpeech method
-- removed clothing &amp; appearance missmatch message
-</code></pre>
-</div>
-<h2 id="server--client">Server &amp; Client</h2>
-<h3 id="added-2">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- animationChange event
-- player forwardSpeed &amp; strafeSpeed getter
-</code></pre>
-</div>
-<h2 id="js-module">JS Module</h2>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Updated nodeJS launch options to support native ECMAScript module loader by default (removed experimental loader warning)
-  → The js-module automatically detects esm files if one of the described cases are fullfilled, see: https://nodejs.org/docs/latest-v17.x/api/esm.html#enabling
-- Added extra-cli-args to server.cfg
-</code></pre>
-</div>
-<h2 id="c-module">C# Module</h2>
-<h3 id="contains-breaking-changes"><span style="color: red;">Contains Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Breaking Change: Async baseobject classes now don't have generic arguments (`AsyncPlayer&lt;IPlayer&gt;` -&gt; `AsyncPlayer`)
-- Added new optional API that makes any API call on any thread fully safe, more info in csharp Discord channel pinned messages
-- Fixed OnPlayerDamage async attribute event handler
-- Added Alt.GetEntityById
-- Added Alt.Core.IsMainThread
+<pre><code class="lang-yaml">- Add support for GTA version 2699
 </code></pre>
 </div>
 </article>
