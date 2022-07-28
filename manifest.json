@@ -50274,7 +50274,19 @@
       "output": {
         ".html": {
           "relative_path": "gta/articles/snippets/index.html",
-          "hash": "5DaBcNWpPldTQ2hE8zkzzoLK0UnbKjLQQ5X7GFZkBng="
+          "hash": "dwfh9fG/Kx4javP+hAxJ/SKebObaW5dFow7huCg5ruE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/snippets/minimap-position.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/snippets/minimap-position.html",
+          "hash": "vxG/Yk0XBYDkOl5P6DKYDFuOMvvdQ2VuudM5uy2G9Wk="
         }
       },
       "is_incremental": false,
@@ -53091,7 +53103,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelogs/index.html",
-          "hash": "r67sLhkHqfAoqwQLNYvRHRcE7KxN2jZovnGCyhDPOvE="
+          "hash": "nBmxkgSUv5NAv+LHtUlECtdgnYDXtcHgucResdngKIw="
         }
       },
       "is_incremental": false,
@@ -63501,7 +63513,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "tAWH3oE1JddMDC/hSEMollhQpt1rBRW4Idp6IBe5Ur0="
+          "hash": "h0ImaIsYOdhvrZAl+w34WdMZeyw45g0thI+cTza0BCI="
         }
       },
       "is_incremental": false,
