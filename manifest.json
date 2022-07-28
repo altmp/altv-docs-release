@@ -50026,12 +50026,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "altv-docs-gta/articles/ped/models.md",
       "output": {
         ".html": {
           "relative_path": "gta/articles/ped/models.html",
-          "hash": "eI+Jnn5pSpUwOSoOIrXGEs875AZ8ljTxfe/vtLHwuzg="
+          "hash": "oLTSVHiEr6mxruqZzacoHXdz7pLjCRqtNzkujPcbY78="
         }
       },
       "is_incremental": false,
@@ -50478,7 +50481,7 @@
       "output": {
         ".html": {
           "relative_path": "gta/articles/vehicle/models.html",
-          "hash": "WQbDjpju570P7+0qcToqqjUAiDO8/ayOIRKuf8F8nlA="
+          "hash": "3uDRTfgGDmANsBozFL/z6NxeLbKuSYv4moBvq3xOfKo="
         }
       },
       "is_incremental": false,
