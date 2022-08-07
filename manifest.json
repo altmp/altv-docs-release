@@ -30295,6 +30295,1766 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/08e9fa.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/08e9fa.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/0a0c17.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/0a0c17.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/0b1421.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/0b1421.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/0b9cf1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/0b9cf1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/0c0d18.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/0c0d18.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/0d1116.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/0d1116.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/0e0d14.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/0e0d14.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/11141a.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/11141a.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/112552.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/112552.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/122e2b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/122e2b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/12383c.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/12383c.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/13181f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/13181f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/132428.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/132428.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/151921.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/151921.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/155c2d.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/155c2d.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1b203e.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1b203e.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1b6770.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1b6770.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1c1d21.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1c1d21.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1c3551.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1c3551.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1d2129.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1d2129.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1d5a3f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1d5a3f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1e1d22.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1e1d22.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1e232f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1e232f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1e2429.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1e2429.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/1f2852.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/1f2852.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/221b19.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/221b19.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/222e46.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/222e46.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/22383e.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/22383e.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/233155.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/233155.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/2354a1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/2354a1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/2446a8.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/2446a8.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/253aa7.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/253aa7.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/26282a.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/26282a.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/275190.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/275190.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/282c4d.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/282c4d.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/2a282b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/2a282b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/2d362a.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/2d362a.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/2d423f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/2d423f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/2f2d52.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/2f2d52.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/304c7e.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/304c7e.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/31423f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/31423f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/32383d.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/32383d.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/333a3c.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/333a3c.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/345e72.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/345e72.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/354158.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/354158.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/363a3f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/363a3f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/371c25.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/371c25.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/39434d.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/39434d.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/394762.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/394762.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/3a2a1b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/3a2a1b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/3b39e0.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/3b39e0.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/3c3f47.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/3c3f47.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/402e2b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/402e2b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/4271e1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/4271e1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/444e54.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/444e54.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/453831.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/453831.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/454b4f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/454b4f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/45594b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/45594b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/46231a.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/46231a.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/473f2b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/473f2b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/47578f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/47578f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/49111d.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/49111d.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/4c5f81.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/4c5f81.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/4cc3da.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/4cc3da.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/4e6443.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/4e6443.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/503218.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/503218.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/506272.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/506272.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/515554.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/515554.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/58688e.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/58688e.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/5870a1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/5870a1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/5a6352.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/5a6352.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/608592.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/608592.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/621276.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/621276.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/63625c.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/63625c.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/637380.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/637380.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/637ba7.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/637ba7.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/653f23.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/653f23.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/65867f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/65867f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/66b81f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/66b81f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/696748.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/696748.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/6a747c.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/6a747c.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/6b1f7b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/6b1f7b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/6c6b4b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/6c6b4b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/6ea3c6.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/6ea3c6.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/6f1818.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/6f1818.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/726c57.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/726c57.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/732021.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/732021.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/74b5d8.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/74b5d8.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/752b19.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/752b19.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/76afbe.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/76afbe.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/775c3e.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/775c3e.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/778794.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/778794.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/785f33.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/785f33.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/7a6440.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/7a6440.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/7a6c55.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/7a6c55.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/7b1a22.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/7b1a22.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/7f6a48.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/7f6a48.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/81827f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/81827f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/81844c.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/81844c.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/83c566.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/83c566.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/8c9095.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/8c9095.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/8e1b1f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/8e1b1f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/8f1e17.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/8f1e17.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/916532.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/916532.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/979a97.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/979a97.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/98d223.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/98d223.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/999da0.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/999da0.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/9b8c78.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/9b8c78.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/9ba0a8.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/9ba0a8.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/9c1016.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/9c1016.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/9f9e8a.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/9f9e8a.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/a0a199.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/a0a199.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/a4965f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/a4965f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/a51e23.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/a51e23.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/a94744.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/a94744.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/ac9975.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/ac9975.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/afd6e4.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/afd6e4.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/b0ab94.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/b0ab94.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/b0ee6e.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/b0ee6e.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/b16c51.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/b16c51.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/b5a079.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/b5a079.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/b60f25.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/b60f25.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/b6111b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/b6111b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/b7bfca.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/b7bfca.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/bc1917.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/bc1917.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/bcac8f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/bcac8f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/bfae7b.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/bfae7b.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/c00e1a.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/c00e1a.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/c2944f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/c2944f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/c2c4c6.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/c2c4c6.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/c3b492.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/c3b492.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/cf1f21.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/cf1f21.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/d3d3d3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/d3d3d3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/d44a17.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/d44a17.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/d6e7f1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/d6e7f1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/da1918.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/da1918.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/de0f18.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/de0f18.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/df5891.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/df5891.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/dfd5b2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/dfd5b2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/dfddd0.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/dfddd0.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/e0e13d.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/e0e13d.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/eae6de.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/eae6de.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/eaeaea.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/eaeaea.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f1cc40.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f1cc40.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f21f99.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f21f99.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f27d20.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f27d20.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f2ad2e.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f2ad2e.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f6ae20.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f6ae20.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f78616.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f78616.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f7edd5.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f7edd5.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f8b658.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f8b658.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/f9a458.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/f9a458.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/fbe212.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/fbe212.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/fcf9f1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/fcf9f1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/fdd6cd.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/fdd6cd.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/ffc91f.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/ffc91f.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/ffcf20.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/ffcf20.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/fffff6.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/fffff6.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/fffffb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/fffffb.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/colors/ffffff.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/vehicle/colors/ffffff.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "altv-docs-assets/altv-docs-gta/images/vehicle/models/adder.png",
       "output": {
         "resource": {
@@ -50262,7 +52022,7 @@
       "output": {
         ".html": {
           "relative_path": "gta/articles/snippets/cayo-perico.html",
-          "hash": "6HRaQTQvbUVh50lWnNXsmfKAdogDrqhIX7+Bb9IQIbs="
+          "hash": "MYIZTm0rgLcbUVzBdb0FUAi1t3wwkt0oisTS69hb8s8="
         }
       },
       "is_incremental": false,
@@ -50298,7 +52058,7 @@
       "output": {
         ".html": {
           "relative_path": "gta/articles/snippets/request-model.html",
-          "hash": "JxICGL6cofoqd3FWIVRZRFAd+36sl07aLK6sQJUUVlc="
+          "hash": "14/Wc10TGgjDtC8tOqEJkpu2PQNFw9XSedSzpJ+Y0as="
         }
       },
       "is_incremental": false,
@@ -50454,7 +52214,7 @@
       "output": {
         ".html": {
           "relative_path": "gta/articles/vehicle/colors.html",
-          "hash": "TnZVI1HnLhfHbT7e9NExpyA+7Roag7PMaFpauFodd6Q="
+          "hash": "HYRSU7mb/4hYFxkAnIKPrlGt7d2PvULRxuOENg6Je6k="
         }
       },
       "is_incremental": false,
@@ -63657,7 +65417,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "dKbN2yfQ4CKySlbOUmVgxsxXzAFLQ05qKX6ByVLbNSw="
+          "hash": "N5MjJiI/vtxpn0s12O9o+J3I5e/MkNqJrlqHGLLdujo="
         }
       },
       "is_incremental": false,
