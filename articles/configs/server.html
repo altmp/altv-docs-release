@@ -151,6 +151,8 @@ players: 256
 password: &quot;mySecretPassword&quot;
 # If the server should be visible on the masterlist in the alt:V client
 announce: true
+# Token to announce the server to the masterlist
+token: &quot;superSecretToken&quot;
 # The gamemode your server is running
 gamemode: &quot;Freeroam&quot;
 # The website of your server
@@ -187,19 +189,19 @@ js-module: {
         # Define inspector port
         port: 9229
     },
-    # https://nodejs.org/api/cli.html#--enable-source-maps
+    # &quot;https://nodejs.org/api/cli.html#--enable-source-maps&quot;
     source-maps: true,
-    # https://nodejs.org/api/cli.html#--heap-prof
+    # &quot;https://nodejs.org/api/cli.html#--heap-prof&quot;
     heap-profiler: true,
     # Enable profiler
     profiler: true,
-    # https://nodejs.org/api/cli.html#--experimental-fetch
+    # &quot;https://nodejs.org/api/cli.html#--experimental-fetch&quot;
     global-fetch: true,
-    # https://nodejs.org/api/cli.html#--experimental-global-webcrypto
+    # &quot;https://nodejs.org/api/cli.html#--experimental-global-webcrypto&quot;
     global-webcrypto: true,
-    # https://nodejs.org/api/cli.html#--experimental-network-imports
+    # &quot;https://nodejs.org/api/cli.html#--experimental-network-imports&quot;
     network-imports: true,
-    # Add extra cli arguments to the node environment https://nodejs.org/api/cli.html
+    # Add extra cli arguments to the node environment &quot;https://nodejs.org/api/cli.html&quot;
     extra-cli-args: [&quot;--inspect=127.0.0.1:9229&quot;, &quot;--max-old-space-size=8192&quot;]
 }
 # Settings related to c#-module
