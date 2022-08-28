@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IMValueSerializer&lt;TValue&gt;
+    <title>Interface IMValueSerializer&lt;T&gt;
    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Interface IMValueSerializer&lt;TValue&gt;
+    <meta name="title" content="Interface IMValueSerializer&lt;T&gt;
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_IMValueSerializer_1_Deserialize_AltV_Net_Elements_Args_IMValueConst_">Deserialize(IMValueConst)</a></li><li><a href="#AltV_Net_IMValueSerializer_1_DeserializeFromString_System_String_">DeserializeFromString(String)</a></li><li><a href="#AltV_Net_IMValueSerializer_1_Serialize__0_">Serialize(TValue)</a></li><li><a href="#AltV_Net_IMValueSerializer_1_SerializeToString__0_">SerializeToString(TValue)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_IMValueSerializer_1_ToMValue__0_AltV_Net_IMValueWriter_">ToMValue(T, IMValueWriter)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c8b1b98dfbe5443adc32d7d8e592ddffe72edd93/api/AltV.Net.Shared/IMValueSerializer.cs/#L5">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Shared/IMValueSerializer.cs/#L3">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_IMValueSerializer_1.md&amp;value=---%0Auid%3A%20AltV.Net.IMValueSerializer%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -139,27 +139,15 @@
 
   
   
-  <h1 id="AltV_Net_IMValueSerializer_1" data-uid="AltV.Net.IMValueSerializer`1" class="text-break">Interface IMValueSerializer&lt;TValue&gt;
+  <h1 id="AltV_Net_IMValueSerializer_1" data-uid="AltV.Net.IMValueSerializer`1" class="text-break">Interface IMValueSerializer&lt;T&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="AltV.Net.IMValueSerializer.html#AltV_Net_IMValueSerializer_ValueType">IMValueSerializer.ValueType</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.IMValueSerializer.html#AltV_Net_IMValueSerializer_Serialize_System_Object_">IMValueSerializer.Serialize(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.IMValueSerializer.html#AltV_Net_IMValueSerializer_SerializeToString_System_Object_">IMValueSerializer.SerializeToString(Object)</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.html">AltV.Net</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.Shared.dll</h6>
   <h5 id="AltV_Net_IMValueSerializer_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IMValueSerializer&lt;TValue&gt; : IMValueSerializer</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IMValueSerializer&lt;in T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -171,7 +159,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TValue</span></td>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -180,18 +168,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_IMValueSerializer_1_Deserialize_AltV_Net_Elements_Args_IMValueConst_.md&amp;value=---%0Auid%3A%20AltV.Net.IMValueSerializer%601.Deserialize(AltV.Net.Elements.Args.IMValueConst)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_IMValueSerializer_1_ToMValue__0_AltV_Net_IMValueWriter_.md&amp;value=---%0Auid%3A%20AltV.Net.IMValueSerializer%601.ToMValue(%600%2CAltV.Net.IMValueWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c8b1b98dfbe5443adc32d7d8e592ddffe72edd93/api/AltV.Net.Shared/IMValueSerializer.cs/#L7">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Shared/IMValueSerializer.cs/#L5">View Source</a>
   </span>
-  <a id="AltV_Net_IMValueSerializer_1_Deserialize_" data-uid="AltV.Net.IMValueSerializer`1.Deserialize*"></a>
-  <h4 id="AltV_Net_IMValueSerializer_1_Deserialize_AltV_Net_Elements_Args_IMValueConst_" data-uid="AltV.Net.IMValueSerializer`1.Deserialize(AltV.Net.Elements.Args.IMValueConst)">Deserialize(IMValueConst)</h4>
+  <a id="AltV_Net_IMValueSerializer_1_ToMValue_" data-uid="AltV.Net.IMValueSerializer`1.ToMValue*"></a>
+  <h4 id="AltV_Net_IMValueSerializer_1_ToMValue__0_AltV_Net_IMValueWriter_" data-uid="AltV.Net.IMValueSerializer`1.ToMValue(`0,AltV.Net.IMValueWriter)">ToMValue(T, IMValueWriter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">TValue Deserialize(IMValueConst mValueConst)</code></pre>
+    <pre><code class="lang-csharp hljs">void ToMValue(T value, IMValueWriter writer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -204,164 +192,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Args.IMValueConst.html">IMValueConst</a></td>
-        <td><span class="parametername">mValueConst</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TValue</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_IMValueSerializer_1_DeserializeFromString_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.IMValueSerializer%601.DeserializeFromString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c8b1b98dfbe5443adc32d7d8e592ddffe72edd93/api/AltV.Net.Shared/IMValueSerializer.cs/#L10">View Source</a>
-  </span>
-  <a id="AltV_Net_IMValueSerializer_1_DeserializeFromString_" data-uid="AltV.Net.IMValueSerializer`1.DeserializeFromString*"></a>
-  <h4 id="AltV_Net_IMValueSerializer_1_DeserializeFromString_System_String_" data-uid="AltV.Net.IMValueSerializer`1.DeserializeFromString(System.String)">DeserializeFromString(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">TValue DeserializeFromString(string mValueConst)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">mValueConst</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TValue</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_IMValueSerializer_1_Serialize__0_.md&amp;value=---%0Auid%3A%20AltV.Net.IMValueSerializer%601.Serialize(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c8b1b98dfbe5443adc32d7d8e592ddffe72edd93/api/AltV.Net.Shared/IMValueSerializer.cs/#L8">View Source</a>
-  </span>
-  <a id="AltV_Net_IMValueSerializer_1_Serialize_" data-uid="AltV.Net.IMValueSerializer`1.Serialize*"></a>
-  <h4 id="AltV_Net_IMValueSerializer_1_Serialize__0_" data-uid="AltV.Net.IMValueSerializer`1.Serialize(`0)">Serialize(TValue)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">MValueConst Serialize(TValue value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TValue</span></td>
+        <td><span class="xref">T</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_IMValueSerializer_1_SerializeToString__0_.md&amp;value=---%0Auid%3A%20AltV.Net.IMValueSerializer%601.SerializeToString(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c8b1b98dfbe5443adc32d7d8e592ddffe72edd93/api/AltV.Net.Shared/IMValueSerializer.cs/#L11">View Source</a>
-  </span>
-  <a id="AltV_Net_IMValueSerializer_1_SerializeToString_" data-uid="AltV.Net.IMValueSerializer`1.SerializeToString*"></a>
-  <h4 id="AltV_Net_IMValueSerializer_1_SerializeToString__0_" data-uid="AltV.Net.IMValueSerializer`1.SerializeToString(`0)">SerializeToString(TValue)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string SerializeToString(TValue value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TValue</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="AltV.Net.IMValueWriter.html">IMValueWriter</a></td>
+        <td><span class="parametername">writer</span></td>
         <td></td>
       </tr>
     </tbody>
