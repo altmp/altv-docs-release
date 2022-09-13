@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#130-release">13.0-Release</a><ul class="level2 nav bs-docs-sidenav 130-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#fixed-1">Fixed</a></li><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-2">Breaking changes</a></li></ul></li><li><a href="#c-server-module">C# Server Module</a><ul class="level3 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#130-release">13.0-Release</a><ul class="level2 nav bs-docs-sidenav 130-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#fixed-2">Fixed</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-2">Breaking changes</a></li></ul></li><li><a href="#c-server-module">C# Server Module</a><ul class="level3 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -156,7 +156,7 @@
 - logDebug to prints custom log if client is in debugmode
 - Object api
 - increased weapon component pool
-- weapon shoot event
+- weapon shoot &amp; weapon change event
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
@@ -169,6 +169,12 @@
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
+<h3 id="added-1">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- getPedModelInfoByHash method
+- bones info to getVehicleModelInfoByHash method
+</code></pre>
+</div>
 <h3 id="fixed-1">Fixed</h3>
 <div class="nohljsln">
 <pre><code class="lang-yaml">- Master server used default interface even if bound to different ip
@@ -178,6 +184,12 @@
 <h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
 <div class="nohljsln">
 <pre><code class="lang-yaml">- attachTo now takes boneid instead of boneindex
+</code></pre>
+</div>
+<h2 id="server--client">Server &amp; Client</h2>
+<h3 id="fixed-2">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- blip route didn't update when setting pos
 </code></pre>
 </div>
 <h2 id="js-module">JS Module</h2>
