@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#130-release">13.0-Release</a><ul class="level2 nav bs-docs-sidenav 130-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#fixed-2">Fixed</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li><li><a href="#c-server-module">C# Server Module</a><ul class="level3 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-4">Breaking changes</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#130-release">13.0-Release</a><ul class="level2 nav bs-docs-sidenav 130-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li><li><a href="#fixed-2">Fixed</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li><li><a href="#c-server-module">C# Server Module</a><ul class="level3 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-4">Breaking changes</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -184,6 +184,11 @@
 - player sendNames property
 - sendNames parameter to accept method in connection queue (default is true)
 - player dimension change event
+- Warning when DLC resource name not only contain lowercase letters, numbers or &quot;-&quot;/&quot;_&quot; as special character or its not starting with a letter
+- Add pedmodels.bin file to server data
+- scriptMaxSpeed, hybridExtraActive, hybridExtraState, counterMeasureCount, rocketRefuelSpeed properties to vehicle
+- getWeaponCapacity &amp; setWeaponCapacity methods
+- getLocalMetaKeys method
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
@@ -191,11 +196,14 @@
 <pre><code class="lang-yaml">- Master server used default interface even if bound to different ip
 - getServerConfig() does not return variable values properly that start with numeric characters
 - server connected to external voice server with --justpack argument
+- setting password during runtime didn't work
 </code></pre>
 </div>
 <h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
 <div class="nohljsln">
 <pre><code class="lang-yaml">- attachTo now takes boneid instead of boneindex
+- Connection info authToken has a limit of 255 characters
+- removed removeEntity event
 </code></pre>
 </div>
 <h2 id="server--client">Server &amp; Client</h2>
@@ -203,6 +211,11 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- Automatically change all configurations for Client (alt.cfg/history.servers) to [toml](https://toml.io/en/) format
 - Change all configurations for Server (server.cfg/resource.cfg/stream.cfg) to [toml](https://toml.io/en/) format by using the command line argument &quot;--convert-config-format&quot; on server start
+</code></pre>
+</div>
+<h3 id="added-2">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- getSyncedMetaKeys, getStreamSyncedMetaKeys, getMetaKeys methods
 </code></pre>
 </div>
 <h3 id="fixed-2">Fixed</h3>
@@ -223,6 +236,7 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- IPlayer DiscordId changed type from string to long
 - IConnectionInfo DiscordUserId changed type from string to long
+- By AsyncResource constructor the default of &quot;forceAsyncBaseObjects&quot; is set to &quot;true&quot;. To go back to old behavior you need to set &quot;false&quot;
 </code></pre>
 </div>
 </article>
