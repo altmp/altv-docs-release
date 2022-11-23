@@ -155,22 +155,21 @@ secret: 'https://youtu.be/tieoP-tNZM8'
 </code></pre>
 <p>Now you only have to start the voice server and continue with the integration of the alt:V server.</p>
 <h2 id="integrate-external-voice-server">Integrate external voice server</h2>
-<p>To integrate the alt:V server only small adjustments to the server.cfg are necessary:</p>
-<pre><code class="lang-yaml">voice: {
-    # The bitrate of the voice server
-    bitrate: 64000,
-    # Secret shared between the alt:V server and the external voice server
-    # The secret must consist of numeric values only
-    externalSecret: &quot;1234567890&quot;,
-    # The external host address (leave 127.0.0.1, if voice-server is on same machine)
-    externalHost: &quot;127.0.0.1&quot;,
-    # The external host port
-    externalPort: 7798,
-    # The external host public address (should be the ip address of your server, not localhost!)
-    externalPublicHost: &quot;xx.xx.xx.xx&quot;,
-    # The external host public port
-    externalPublicPort: 7799
-}
+<p>To integrate the alt:V server only small adjustments to the server.toml are necessary:</p>
+<pre><code class="lang-toml">[voice]
+# The bitrate of the voice server
+bitrate = 64000
+# The secret for the external server (only needed when using externalHost)
+# The secret must consist of numeric values only
+externalSecret = &quot;1234567890&quot;
+# The external host address (leave 127.0.0.1, if voice-server is on same machine)
+externalHost = &quot;127.0.0.1&quot;
+# The external host port
+externalPort = 7798
+# The external host public address (should be the ip address of your server, not localhost!)
+externalPublicHost = &quot;xx.xx.xx.xx&quot;
+# The external host public port
+externalPublicPort = 7799
 </code></pre>
 </article>
                     </div>
