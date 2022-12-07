@@ -381,7 +381,8 @@ function customEventFunction() {
 </section>
 </div>
 <h2 id="raw-events">Raw Events</h2>
-<p>Raw events serialize the values to their raw byte buffer representation instead of converting them to an intermediate value, because of this the raw events can serialize and send big objects / arrays a lot faster than the normal events, BUT the downside is that this only works when both sides are using JavaScript</p>
+<p>Raw events serialize the values to their raw byte buffer representation instead of converting them to an intermediate value, because of this the raw events can serialize and send big objects / arrays a lot faster than the normal events, BUT the downside is that this only works when both sides are using JavaScript.</p>
+<p>Think of them as &quot;native&quot; JavaScript events, they can send almost any JS built-in data structure, such as <code>Set</code>, <code>Map</code>, <code>Date</code>, etc. and without limits (for example, BigInt of any size).</p>
 <div class="CAUTION">
 <h5>Caution</h5>
 <p><code>alt.emitServerRaw</code> only works if the server is using javascript.</p>
