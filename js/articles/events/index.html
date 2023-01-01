@@ -201,8 +201,7 @@ Clients may only communicate with WebViews and the server.</p>
 </tbody>
 </table>
 <h2 id="server-to-client">Server to client</h2>
-<p>The server may only emit data to the client-side with <code>emitClient</code> or <code>emitClientRaw</code>, which requires a Player.
-However, a player can also be substituted for <code>null</code> which works the same way as <code>alt.emitAllClients</code> by emitting it to all clients.</p>
+<p>The server may only emit data to the client-side with <code>emitClient</code> or <code>emitClientRaw</code>, which requires a Player.</p>
 <p><code>emitClientRaw</code> and <code>emitAllClientsRaw</code> are used for big data and are faster than <code>emitClient</code> or <code>emitAllClients</code>.</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
@@ -226,7 +225,6 @@ However, a player can also be substituted for <code>null</code> which works the 
     alt.emitClient(player, 'sayHello'); // Send an event to a specific player
 
     // Send an event to all players
-    alt.emitClient(null, 'sayHello');
     alt.emitAllClients('sayHello');
 });
 </code></pre>
