@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#140-release">14.0-Release</a><ul class="level2 nav bs-docs-sidenav 140-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#140-release">14.0-Release</a><ul class="level2 nav bs-docs-sidenav 140-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-2">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -141,7 +141,46 @@
 <h2 id="client">Client</h2>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- 
+<pre><code class="lang-yaml">- Render RMLUI under CEF
+- Updated RMLUI to 5.0
+- RMLUI antialiasing
+- RMLUI fallback font
+- getPedBonePos method
+- Side Mouse buttons for voice keybinding
+- Display downloadspeed while downloading ressources
+- Server Permission translations
+- submit nickname on first start by pressing enter
+- adaptivity for client console layout
+- cef support while pause menu ped is active
+- downloadspeed setting
+- Updated cef to v103
+- general new UI
+</code></pre>
+</div>
+<h3 id="fixed">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Disconnection modal displayed twice after reconnect
+- The Win key got blocked by active webview in the game
+- Ipv6 support
+- wrong menu after connect rejection
+</code></pre>
+</div>
+<h2 id="server">Server</h2>
+<h3 id="added-1">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- &quot;all&quot; as setting language
+</code></pre>
+</div>
+<h2 id="js-module">JS Module</h2>
+<h3 id="added-2">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- (server) Display source path on deprecated methods usage
+- (Server) Automatically fix paths with special characters
+</code></pre>
+</div>
+<h3 id="fixed-1">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- (client) webview, audio, websocket &amp; rml geteventhandler returned removed ones
 </code></pre>
 </div>
 </article>
