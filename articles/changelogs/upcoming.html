@@ -156,6 +156,7 @@
 - Updated cef to v103
 - general new UI
 - clear console command
+- ime support for rmlui
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
@@ -167,6 +168,10 @@
 - webview freezed on FileDialog
 - cursor type didnt reset on webview destroy
 - crashdump location folder
+- cursor in iframe inputs wasnt visible
+- scrolling in iframes
+- rmlui clipboard
+- blips &amp; object are not destroyed on resource stop
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
@@ -180,8 +185,10 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- (server) Display source path on deprecated methods usage
 - (Server) Automatically fix paths with special characters
+- (Server) partial TextEncoder and TextDecoder
 - (Server) Updated nodeJS to 18.13.1
 - (Client) Updated v8 to 10.2
+- Allow emitting typed arrays
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
