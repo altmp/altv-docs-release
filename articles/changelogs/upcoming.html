@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#140-release">14.0-Release</a><ul class="level2 nav bs-docs-sidenav 140-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-2">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added-3">Added</a></li><li><a href="#fixed-2">Fixed</a></li><li><a href="#rework">Rework</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#140-release">14.0-Release</a><ul class="level2 nav bs-docs-sidenav 140-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-2">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes-1">Breaking changes</a></li><li><a href="#added-3">Added</a></li><li><a href="#fixed-2">Fixed</a></li><li><a href="#rework">Rework</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -139,6 +139,11 @@
 <p>This update isn't released yet.</p>
 </div>
 <h2 id="client">Client</h2>
+<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- disabled cloth sync if setted via native
+</code></pre>
+</div>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
 <pre><code class="lang-yaml">- Render RMLUI under CEF
@@ -179,6 +184,10 @@
 - crash while pressing ESC after ressource restart
 - launcher shortcut was system wide
 - website url of a server was always lowercase
+- inputs in webviews didnt trigger focus &amp; blur events
+- GTA Sound options didnt save
+- webview stayed unfocus if data url was used
+- cloning ped in pause menu disappeared all UI's
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
@@ -194,6 +203,7 @@
 - (Server) Automatically fix paths with special characters
 - (Server) partial TextEncoder and TextDecoder
 - (Server) Updated nodeJS to 18.13.1
+- (Server) Possible to modify damage value in weapondamage event
 - (Client) Updated v8 to 10.2
 - Allow emitting typed arrays
 </code></pre>
@@ -206,7 +216,7 @@
 </code></pre>
 </div>
 <h2 id="c-module">C# Module</h2>
-<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
+<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
 <div class="nohljsln">
 <pre><code class="lang-yaml">- OnRemove() method replaced by OnDestroy()
 </code></pre>
