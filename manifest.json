@@ -52094,7 +52094,19 @@
       "output": {
         ".html": {
           "relative_path": "gta/articles/tutorials/index.html",
-          "hash": "uLAwA23Bys8hUW8NOzc+Ua7SCyJPuA7rW/JRf3tTBTk="
+          "hash": "FnxUCqZZy/fwpg+SXotL3IdWzXrAo3TwK35uMNbN5g0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/overwrite_gameconfig.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/overwrite_gameconfig.html",
+          "hash": "AWVUb76+Vmq2Hz9u38DVUuot8xkEGmO4+3T3XINptkU="
         }
       },
       "is_incremental": false,
@@ -55157,7 +55169,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelogs/index.html",
-          "hash": "D4D5y+a6u99368M6YMLdbAhyYjwiCQImmIEno3r8sKA="
+          "hash": "IwPvC+msKBWM57mWaqo6R8owe3HTAQvJ4ZoDPPaAE6c="
         }
       },
       "is_incremental": false,
@@ -55361,7 +55373,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/faq.html",
-          "hash": "hXo++EYWPDTR0syMq+TTIv/qtzgai6jecVl+Me/PJBc="
+          "hash": "SJRotrJw27gy1IFmrlFf2qR5ADakoz2YqWR81/IEfj0="
         }
       },
       "is_incremental": false,
