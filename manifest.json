@@ -64009,18 +64009,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "coreclr-module/docs/api/AltV.Net.Mock.MockAltV-6.yml",
-      "output": {
-        ".html": {
-          "relative_path": "cs/api/AltV.Net.Mock.MockAltV-6.html",
-          "hash": "6X+BsW+aoPBDhFh4rCUl8vkPRdLRqtv8XPASRVdrTok="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "coreclr-module/docs/api/AltV.Net.Mock.MockAltV-7.yml",
       "output": {
         ".html": {
