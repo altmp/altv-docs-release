@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>14.0-Release </title>
+    <title>15.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="14.0-Release ">
+    <meta name="title" content="15.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#140-release">14.0-Release</a><ul class="level2 nav bs-docs-sidenav 140-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-2">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes-1">Breaking changes</a></li><li><a href="#added-3">Added</a></li><li><a href="#fixed-2">Fixed</a></li><li><a href="#rework">Rework</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#150-release">15.0-Release</a><ul class="level2 nav bs-docs-sidenav 150-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added-2">Added</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,112 +132,59 @@
                                     </ul>
                                 </span>
 
-<h1 id="140-release">14.0-Release</h1>
+<h1 id="150-release">15.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
 <p>This update isn't released yet.</p>
 </div>
 <h2 id="client">Client</h2>
-<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- disabled cloth sync if setted via native
-</code></pre>
-</div>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Render RMLUI under CEF
-- Updated RMLUI to 5.0
-- RMLUI antialiasing
-- RMLUI fallback font
-- getPedBonePos method
-- Side Mouse buttons for voice keybinding
-- Display downloadspeed while downloading ressources
-- Server Permission translations
-- submit nickname on first start by pressing enter
-- adaptivity for client console layout
-- cef support while pause menu ped is active
-- downloadspeed setting
-- Updated cef to v103
-- general new UI
-- clear console command
-- ime support for rmlui
-- error message in launcher, if gta:v start fails
-- language selection on installation
-- debug, branch &amp; skipprocessconfirmation cli arg
-- installer &amp; uninstaller rework
-- general launcher rework
+<pre><code class="lang-yaml">- Modify gamepool size
+- mute loading music
+- DISABLE_VEHICLE_ENGINE_SHUTDOWN_ON_LEAVE flag to keep engines on when leaving a vehicle
+- worldObjectPositionChange event
+- audio, checkpoint, webview all getter
+- audio, webview id getter
+- audio, blip remoteid getter
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Disconnection modal displayed twice after reconnect
-- Ipv6 support
-- wrong menu after connect rejection
-- webview freezed on FileDialog
-- cursor type didnt reset on webview destroy
-- crashdump location folder
-- cursor in iframe inputs wasnt visible
-- scrolling in iframes
-- rmlui clipboard
-- blips &amp; object got not destroyed on resource stop
-- vehiclelayout meta
-- alt + f4 in vehicle stopped vehicle immediately
-- crash while pressing ESC after ressource restart
-- launcher shortcut was system wide
-- website url of a server was always lowercase
-- inputs in webviews didnt trigger focus &amp; blur events
-- GTA Sound options didnt save
-- webview stayed unfocus if data url was used
-- cloning ped in pause menu disappeared all UI's
-- testProbeAgainstWater native
+<pre><code class="lang-yaml">- minimap textures couldn't be replaced
+- ap1_* ytds, vehshare.ytd, hud.ytd, minimap.ytd couldn't be replaced
+- gfx couldn't be replaced
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
 <h3 id="added-1">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- &quot;all&quot; as setting language
+<pre><code class="lang-yaml">- unreliable events
+- vehicleHorn event (cancable)
+- vehicleSiren, playerSpawn event
+- getEntitiesInDimension, getEntitiesInRange, getClosestEntities methods
+- support for singleplayer rpf files
+- extend limit to 65.000 entities (players, vehicles, etc.)
+- colshape &amp; blip, voicechannel id getter
+- checkpoint all getter
+- extend resource limit to 4GB
+- Synced virtual entitys
+- Synced Ped's
+- Synced Objects
 </code></pre>
 </div>
 <h2 id="js-module">JS Module</h2>
+<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Removed deprecated null in emitClient &amp; emitClientRaw as target parameter
+</code></pre>
+</div>
 <h3 id="added-2">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- (server) Display source path on deprecated methods usage
-- (Server) Automatically fix paths with special characters
-- (Server) partial TextEncoder and TextDecoder
-- (Server) Updated nodeJS to 18.13.1
-- (Server) Possible to modify damage value in weapondamage event
-- (Client) Updated v8 to 10.2
-- Allow emitting typed arrays
-</code></pre>
-</div>
-<h3 id="fixed-1">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- (client) webview, audio, websocket &amp; rml geteventhandler returned removed ones
-- (client) crash in vehicle handling if entity is invalid
-- (client) Internal error. Icu error when using for example toLocaleString
-</code></pre>
-</div>
-<h2 id="c-module">C# Module</h2>
-<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- OnRemove() method replaced by OnDestroy()
-</code></pre>
-</div>
-<h3 id="added-3">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- alt:V custom .NET project template 
-- (client) Add all missing vehicle properties
-</code></pre>
-</div>
-<h3 id="fixed-2">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- (client) weapondata using properties
-</code></pre>
-</div>
-<h3 id="rework">Rework</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Mark Remove() method as deprecated and add Destroy() method for consistent alt:V api
+<pre><code class="lang-yaml">- (Client) toggleStrictChecks for natives
+- (Server|Client) baseObjectCreate &amp; baseObjectRemove event
+- (Server) Missing maxDistance &amp; isSpatial voicechannel getter
 </code></pre>
 </div>
 </article>
