@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class MockAltV&lt;TPlayer, TVehicle, TPed, TBlip, TCheckpoint, TVoiceChannel, TColShape&gt;
+    <title>Class AsyncVirtualEntityGroupFactory
    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Class MockAltV&lt;TPlayer, TVehicle, TPed, TBlip, TCheckpoint, TVoiceChannel, TColShape&gt;
+    <meta name="title" content="Class AsyncVirtualEntityGroupFactory
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Mock_MockAltV_7__ctor_System_String_">MockAltV(String)</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Mock_MockAltV_7_ConnectPlayer_System_String_System_String_System_Action_AltV_Net_Elements_Entities_IPlayer__">ConnectPlayer(String, String, Action&lt;IPlayer&gt;)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Async_Elements_Factories_AsyncVirtualEntityGroupFactory_Create_AltV_Net_ICore_System_IntPtr_System_UInt32_">Create(ICore, IntPtr, UInt32)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
                             </div>
 
                             
@@ -124,29 +124,33 @@
                               <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
-                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Mock.MockAltV`7">
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Async.Elements.Factories.AsyncVirtualEntityGroupFactory">
 
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/b0679e13662048a3ea8de07b96e40ea7ef1d608f/api/AltV.Net.Mock/MockAltV.cs/#L10">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/406ec146ef73cbd6cbd3895ae3c61af877aa4474/api/AltV.Net.Async/Elements/Factories/AsyncVirtualEntityGroupFactory.cs/#L7">View Source</a>
                                             </li>
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockAltV_7.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockAltV%607%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Factories_AsyncVirtualEntityGroupFactory.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Factories.AsyncVirtualEntityGroupFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
   
   
-  <h1 id="AltV_Net_Mock_MockAltV_7" data-uid="AltV.Net.Mock.MockAltV`7" class="text-break">Class MockAltV&lt;TPlayer, TVehicle, TPed, TBlip, TCheckpoint, TVoiceChannel, TColShape&gt;
+  <h1 id="AltV_Net_Async_Elements_Factories_AsyncVirtualEntityGroupFactory" data-uid="AltV.Net.Async.Elements.Factories.AsyncVirtualEntityGroupFactory" class="text-break">Class AsyncVirtualEntityGroupFactory
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">MockAltV&lt;TPlayer, TVehicle, TPed, TBlip, TCheckpoint, TVoiceChannel, TColShape&gt;</span></div>
+    <div class="level1"><span class="xref">AsyncVirtualEntityGroupFactory</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AltV.Net.IBaseObjectFactory-1.html">IBaseObjectFactory</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVirtualEntityGroup.html">IVirtualEntityGroup</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -172,102 +176,28 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Mock.html">AltV.Net.Mock</a></h6>
-  <h6><strong>Assembly</strong>: AltV.Net.Mock.dll</h6>
-  <h5 id="AltV_Net_Mock_MockAltV_7_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Async.Elements.Factories.html">AltV.Net.Async.Elements.Factories</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Async.dll</h6>
+  <h5 id="AltV_Net_Async_Elements_Factories_AsyncVirtualEntityGroupFactory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MockAltV&lt;TPlayer, TVehicle, TPed, TBlip, TCheckpoint, TVoiceChannel, TColShape&gt;
-    where TPlayer : IPlayer where TVehicle : IVehicle where TPed : IPed where TBlip : IBlip where TCheckpoint : ICheckpoint where TVoiceChannel : IVoiceChannel where TColShape : IColShape</code></pre>
+    <pre><code class="lang-csharp hljs">public class AsyncVirtualEntityGroupFactory : IBaseObjectFactory&lt;IVirtualEntityGroup&gt;</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TPlayer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TVehicle</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TPed</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TBlip</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TCheckpoint</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TVoiceChannel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TColShape</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockAltV_7__ctor_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockAltV%607.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/b0679e13662048a3ea8de07b96e40ea7ef1d608f/api/AltV.Net.Mock/MockAltV.cs/#L20">View Source</a>
-  </span>
-  <a id="AltV_Net_Mock_MockAltV_7__ctor_" data-uid="AltV.Net.Mock.MockAltV`7.#ctor*"></a>
-  <h4 id="AltV_Net_Mock_MockAltV_7__ctor_System_String_" data-uid="AltV.Net.Mock.MockAltV`7.#ctor(System.String)">MockAltV(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MockAltV(string entryPoint)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">entryPoint</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockAltV_7_ConnectPlayer_System_String_System_String_System_Action_AltV_Net_Elements_Entities_IPlayer__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockAltV%607.ConnectPlayer(System.String%2CSystem.String%2CSystem.Action%7BAltV.Net.Elements.Entities.IPlayer%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Factories_AsyncVirtualEntityGroupFactory_Create_AltV_Net_ICore_System_IntPtr_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Factories.AsyncVirtualEntityGroupFactory.Create(AltV.Net.ICore%2CSystem.IntPtr%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/b0679e13662048a3ea8de07b96e40ea7ef1d608f/api/AltV.Net.Mock/MockAltV.cs/#L46">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/406ec146ef73cbd6cbd3895ae3c61af877aa4474/api/AltV.Net.Async/Elements/Factories/AsyncVirtualEntityGroupFactory.cs/#L9">View Source</a>
   </span>
-  <a id="AltV_Net_Mock_MockAltV_7_ConnectPlayer_" data-uid="AltV.Net.Mock.MockAltV`7.ConnectPlayer*"></a>
-  <h4 id="AltV_Net_Mock_MockAltV_7_ConnectPlayer_System_String_System_String_System_Action_AltV_Net_Elements_Entities_IPlayer__" data-uid="AltV.Net.Mock.MockAltV`7.ConnectPlayer(System.String,System.String,System.Action{AltV.Net.Elements.Entities.IPlayer})">ConnectPlayer(String, String, Action&lt;IPlayer&gt;)</h4>
+  <a id="AltV_Net_Async_Elements_Factories_AsyncVirtualEntityGroupFactory_Create_" data-uid="AltV.Net.Async.Elements.Factories.AsyncVirtualEntityGroupFactory.Create*"></a>
+  <h4 id="AltV_Net_Async_Elements_Factories_AsyncVirtualEntityGroupFactory_Create_AltV_Net_ICore_System_IntPtr_System_UInt32_" data-uid="AltV.Net.Async.Elements.Factories.AsyncVirtualEntityGroupFactory.Create(AltV.Net.ICore,System.IntPtr,System.UInt32)">Create(ICore, IntPtr, UInt32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IPlayer ConnectPlayer(string playerName, string reason, Action&lt;IPlayer&gt; intercept = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public IVirtualEntityGroup Create(ICore core, IntPtr baseObjectPointer, uint id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -280,18 +210,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">playerName</span></td>
+        <td><a class="xref" href="AltV.Net.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">reason</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">baseObjectPointer</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>&gt;</td>
-        <td><span class="parametername">intercept</span></td>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">id</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -306,11 +236,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVirtualEntityGroup.html">IVirtualEntityGroup</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AltV.Net.IBaseObjectFactory-1.html">IBaseObjectFactory&lt;TBaseObject&gt;</a>
+  </div>
 </article>
                     </div>
 
