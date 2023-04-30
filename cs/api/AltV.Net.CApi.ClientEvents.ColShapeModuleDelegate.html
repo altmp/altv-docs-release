@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate CreateBaseObjectDelegate
+    <title>Delegate ColShapeModuleDelegate
    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Delegate CreateBaseObjectDelegate
+    <meta name="title" content="Delegate ColShapeModuleDelegate
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -126,30 +126,30 @@
                               <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
-                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.CApi.ClientEvents.CreateBaseObjectDelegate">
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.CApi.ClientEvents.ColShapeModuleDelegate">
 
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c5270f04a5a425b7dfe35418fda3720e67626e2e/api/AltV.Net.CApi/Events/Events.cs/#L63">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f0e1c0bee791304f676df27faff5626e26798b60/api/AltV.Net.CApi/Events/Events.cs/#L71">View Source</a>
                                             </li>
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_CApi_ClientEvents_CreateBaseObjectDelegate.md&amp;value=---%0Auid%3A%20AltV.Net.CApi.ClientEvents.CreateBaseObjectDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_CApi_ClientEvents_ColShapeModuleDelegate.md&amp;value=---%0Auid%3A%20AltV.Net.CApi.ClientEvents.ColShapeModuleDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
   
   
-  <h1 id="AltV_Net_CApi_ClientEvents_CreateBaseObjectDelegate" data-uid="AltV.Net.CApi.ClientEvents.CreateBaseObjectDelegate" class="text-break">Delegate CreateBaseObjectDelegate
+  <h1 id="AltV_Net_CApi_ClientEvents_ColShapeModuleDelegate" data-uid="AltV.Net.CApi.ClientEvents.ColShapeModuleDelegate" class="text-break">Delegate ColShapeModuleDelegate
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.CApi.ClientEvents.html">AltV.Net.CApi.ClientEvents</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.CApi.dll</h6>
-  <h5 id="AltV_Net_CApi_ClientEvents_CreateBaseObjectDelegate_syntax">Syntax</h5>
+  <h5 id="AltV_Net_CApi_ClientEvents_ColShapeModuleDelegate_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void CreateBaseObjectDelegate(IntPtr baseObject, BaseObjectType type, uint id);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void ColShapeModuleDelegate(IntPtr colShapePointer, IntPtr targetEntityPointer, BaseObjectType entityType, bool state);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,17 +163,22 @@
     <tbody>
       <tr>
         <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">baseObject</span></td>
+        <td><span class="parametername">colShapePointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">targetEntityPointer</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="AltV.Net.Elements.Entities.BaseObjectType.html">BaseObjectType</a></td>
-        <td><span class="parametername">type</span></td>
+        <td><span class="parametername">entityType</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">id</span></td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
         <td></td>
       </tr>
     </tbody>
