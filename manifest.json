@@ -65153,18 +65153,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "coreclr-module/docs/api/AltV.Net.Shared.Elements.Entities.ISharedLocalVehicle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "cs/api/AltV.Net.Shared.Elements.Entities.ISharedLocalVehicle.html",
-          "hash": "30C8gCIFJ4N00o9KdXIfnjL3v5QGATjSDOvMLuE81lQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "coreclr-module/docs/api/AltV.Net.Shared.Elements.Entities.ISharedMarker.yml",
       "output": {
         ".html": {
