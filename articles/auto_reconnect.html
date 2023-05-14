@@ -157,9 +157,7 @@ server to finish his startup procedure (fetching data from database, loading mod
 </ul>
 <section id="tabpanel_bHGHmlrG6S_tabid-1" role="tabpanel" data-tab="tabid-1">
 
-<pre><code class="lang-js">import fetch from &quot;node-fetch&quot;;
-
-const RETRY_DELAY = 2500;
+<pre><code class="lang-js">const RETRY_DELAY = 2500;
 const DEBUG_PORT = 9223;
 
 async function getLocalClientStatus() {
@@ -194,9 +192,7 @@ connectLocalClient();
 </section>
 <section id="tabpanel_bHGHmlrG6S_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
 
-<pre><code class="lang-ts">import fetch from &quot;node-fetch&quot;;
-
-const enum Status {
+<pre><code class="lang-ts">const enum Status {
   Loading = &quot;LOADING&quot;,
   MainMenu = &quot;MAIN_MENU&quot;,
   DownloadingFiles = &quot;DOWNLOADING_FILES&quot;,
