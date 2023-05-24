@@ -178,8 +178,8 @@ announceRetryErrorAttempts = 50
 duplicatePlayers = 4096
 
 # Define the map bound size
-mapBoundsMinX = 10000 # values are considered negative
-mapBoundsMinY = 10000 # values are considered negative
+mapBoundsMinX = -10000
+mapBoundsMinY = -10000
 mapBoundsMaxX = 65536
 mapBoundsMaxY = 65536
 mapCellAreaSize = 100 #smaller areas uses more ram and less cpu
@@ -230,6 +230,20 @@ modules = [
     &quot;js-module&quot;,
     &quot;csharp-module&quot;
 ]
+
+# Enable only specific dlc packs
+dlc-whitelist = [
+    &quot;mpBeach&quot;,
+    &quot;mpBusiness&quot;,
+    &quot;patchday27ng&quot;
+]
+
+# Obfuscate ressource names
+hashClientResourceName = true
+
+# extend gta pool sizes
+[pools]
+&quot;DrawableStore&quot; = 240420
 
 # Profiling entity creation, systems like streaming etc
 [worldProfiler]
