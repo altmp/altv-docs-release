@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#150-release">15.0-Release</a><ul class="level2 nav bs-docs-sidenav 150-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#150-release">15.0-Release</a><ul class="level2 nav bs-docs-sidenav 150-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -221,6 +221,7 @@
 - Modify gamepool size via server config
 - prometheus support
 - resource wildcard in server.cfg
+- Missing maxDistance &amp; isSpatial voicechannel getter
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
@@ -256,7 +257,13 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- (Client) toggleStrictChecks for natives
 - (Server|Client) baseObjectCreate &amp; baseObjectRemove event
-- (Server) Missing maxDistance &amp; isSpatial voicechannel getter
+</code></pre>
+</div>
+<h2 id="c-module">C# Module</h2>
+<h3 id="breaking-changes-3"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Removed deprecated Alt.Server property
+- All element constructors are deprecated. Please only use Alt.Create* or AltAsync.Create* instead. In one of the next updates the constructors will be removed.
 </code></pre>
 </div>
 </article>
