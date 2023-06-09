@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_Ped_all">all</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_count">count</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_currentWeapon">currentWeapon</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_health">health</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_maxHealth">maxHealth</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_armour">armour</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_Ped_getByID">getByID(number)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_Ped_all">all</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_count">count</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_currentWeapon">currentWeapon</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_health">health</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_maxHealth">maxHealth</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_armour">armour</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_Ped_getByID">getByID(number)</a></li><li><a href="#_altmp_altv_types_alt_client_Ped_getByScriptID">getByScriptID(number)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/f8711d008c8952e091065fb6bda2486de310c0b3/./client/index.d.ts/#L3716">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3848">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -157,10 +157,13 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByID">getByID(BaseObjectType, number)</a>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_isRemote">isRemote</a>
     </div>
     <div>
-      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByRemoteID">getByRemoteID(BaseObjectType, number)</a>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_remoteId">remoteId</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByID">getByID(BaseObjectType, number)</a>
     </div>
     <div>
       <a class="xref" href="alt-client.WorldObject.html#_altmp_altv_types_alt_client_WorldObject_dimension">dimension</a>
@@ -185,9 +188,6 @@
     </div>
     <div>
       <a class="xref" href="alt-client.Entity.html#_altmp_altv_types_alt_client_Entity_visible">visible</a>
-    </div>
-    <div>
-      <a class="xref" href="alt-client.Entity.html#_altmp_altv_types_alt_client_Entity_getByScriptID">getByScriptID(number)</a>
     </div>
     <div>
       <a class="xref" href="alt-client.Entity.html#_altmp_altv_types_alt_client_Entity_setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomEntityMeta, K, V, void&gt;)</a>
@@ -218,6 +218,9 @@
     </div>
     <div>
       <a class="xref" href="alt-client.Entity.html#_altmp_altv_types_alt_client_Entity_getStreamSyncedMetaKeys">getStreamSyncedMetaKeys()</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.Entity.html#_altmp_altv_types_alt_client_Entity_frozen">frozen</a>
     </div>
     <div>
       <span class="xref">Entity.constructor</span>
@@ -254,7 +257,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped_all.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped.all%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/f8711d008c8952e091065fb6bda2486de310c0b3/./client/index.d.ts/#L3725">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3865">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Ped_all" data-uid="@altmp/altv-types.alt-client.Ped.all">all
   <span class="release-stage public"></span>
@@ -287,7 +290,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped_count.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped.count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/f8711d008c8952e091065fb6bda2486de310c0b3/./client/index.d.ts/#L3727">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3867">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Ped_count" data-uid="@altmp/altv-types.alt-client.Ped.count">count
   <span class="release-stage public"></span>
@@ -320,7 +323,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped_currentWeapon.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped.currentWeapon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/f8711d008c8952e091065fb6bda2486de310c0b3/./client/index.d.ts/#L3732">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3872">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Ped_currentWeapon" data-uid="@altmp/altv-types.alt-client.Ped.currentWeapon">currentWeapon
   <span class="release-stage public"></span>
@@ -353,7 +356,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped_health.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped.health%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/f8711d008c8952e091065fb6bda2486de310c0b3/./client/index.d.ts/#L3737">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3877">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Ped_health" data-uid="@altmp/altv-types.alt-client.Ped.health">health
   <span class="release-stage public"></span>
@@ -386,7 +389,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped_maxHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped.maxHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/f8711d008c8952e091065fb6bda2486de310c0b3/./client/index.d.ts/#L3742">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3882">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Ped_maxHealth" data-uid="@altmp/altv-types.alt-client.Ped.maxHealth">maxHealth
   <span class="release-stage public"></span>
@@ -419,7 +422,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped_armour.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped.armour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/f8711d008c8952e091065fb6bda2486de310c0b3/./client/index.d.ts/#L3747">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3887">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Ped_armour" data-uid="@altmp/altv-types.alt-client.Ped.armour">armour
   <span class="release-stage public"></span>
@@ -454,7 +457,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/f8711d008c8952e091065fb6bda2486de310c0b3/./client/index.d.ts/#L3723">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3855">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Ped_getByID" data-uid="@altmp/altv-types.alt-client.Ped.getByID">getByID(number)
   <span class="release-stage public"></span>
@@ -480,6 +483,59 @@
       <tr>
         <td><span class="xref">number</span></td>
         <td><em>id</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>null | <a class="xref" href="alt-client.Ped.html">Ped</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Ped_getByScriptID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Ped.getByScriptID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3863">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Ped_getByScriptID" data-uid="@altmp/altv-types.alt-client.Ped.getByScriptID">getByScriptID(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public static getByScriptID(scriptID: number): null | Ped</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>scriptID</em></td>
         <td>
           
           

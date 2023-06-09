@@ -143,14 +143,12 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- mute loading music
 - DISABLE_VEHICLE_ENGINE_SHUTDOWN_ON_LEAVE flag to keep engines on when leaving a vehicle
-- worldObjectPositionChange event
 - audio, checkpoint, webview all getter
 - audio, webview, httpclien, websocketclient id getter
 - audio, blip remoteid getter
-- worldObjectStreamIn &amp; worldObjectStreamOut event
-- audio filter api
-- colshape api
-- textlabel api
+- worldObjectPositionChange, worldObjectStreamIn &amp; worldObjectStreamOut event
+- entityHitEntity event
+- audio filter, colshape, textlabel, weaponObject api
 - dimension getter, position &amp; rotation setter for localplayer
 - httpclient, rmldocument, websocketclient, webview, checkpoint getbyID method
 - blip getByScriptID method
@@ -169,6 +167,9 @@
 - cef hardware acceleration
 - improve ressource loading speed
 - downloadspeed settings
+- entity frozen setter/getter
+- taskchange event is cancable
+- startEnteringVehicle &amp; startLeavingVehicle events
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
@@ -185,6 +186,7 @@
 - cancel button crashed client
 - voiceInputVolume sets volume in reverse
 - ladder sync
+- localplayer micLevel &amp; isTalking getter
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
@@ -192,6 +194,7 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- Removed PlayerBeforeConnect event
 - Removed id support for entityinstreamingrange method
+- Removed entityWorkerCount server option
 </code></pre>
 </div>
 <h3 id="added-1">Added</h3>
@@ -220,8 +223,9 @@
 - hashClientResourceName server option
 - Modify gamepool size via server config
 - prometheus support
-- resource wildcard in server.cfg
 - Missing maxDistance &amp; isSpatial voicechannel getter
+- streamer, migration thread count can be configured in server.toml
+- resource wildcard support in server.toml
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
