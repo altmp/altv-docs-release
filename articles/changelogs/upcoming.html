@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#150-release">15.0-Release</a><ul class="level2 nav bs-docs-sidenav 150-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#150-release">15.0-Release</a><ul class="level2 nav bs-docs-sidenav 150-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes-3">Breaking changes</a></li><li><a href="#fixed-2">Fixed</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -179,6 +179,7 @@
 - playerBulletHit event
 - checkpoint icon color getter/setter
 - extend audio api by output classes
+- audiocategory data api
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
@@ -199,6 +200,7 @@
 - mouse cursor stucked in the middle of the screen if input was not set to raw
 - crash on invalid rml document input
 - multiple fixes related to the audio api
+- carmodcols can be loaded to use gta v chameleon colors
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
@@ -221,7 +223,7 @@
 - checkpoint all getter
 - extend resource limit to 4GB
 - added priority, filter getter &amp; setter for voiceserver
-- player playAnimation, clearTasks method
+- player playAnimation, clearTasks, playScenario method
 - streamsyncedmeta for checkpoints
 - vehicle quaternion setter &amp; getter
 - objects Api
@@ -244,7 +246,7 @@
 - timestamp for entitys
 - hasWeapon, hasWeaponComponent, AmmoSpecialType, ammoFlags, ammoMax method for player
 - removeAllAmmo parameter for removeAllWeapons
-- blip dimension setter, blips can be shown to only one player
+- blip dimension setter, blips can be shown to specific players
 - addDecoration, removeDecoration, clearDecorations, getDecorations method for player
 </code></pre>
 </div>
@@ -291,6 +293,11 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- Removed deprecated Alt.Server property
 - All element constructors are deprecated. Please only use Alt.Create* or AltAsync.Create* instead. In one of the next updates the constructors will be removed.
+</code></pre>
+</div>
+<h3 id="fixed-2">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Fix OnRmlEvent Event
 </code></pre>
 </div>
 </article>
