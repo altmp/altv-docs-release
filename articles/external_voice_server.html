@@ -157,6 +157,7 @@ secret = 1234567890
 <h2 id="integrate-external-voice-server">Integrate external voice server</h2>
 <p>To integrate the alt:V server only small adjustments to the server.toml are necessary:</p>
 <pre><code class="lang-toml">[voice]
+streamingTickRate = 10
 # The bitrate of the voice server
 bitrate = 64000
 # The secret for the external server (only needed when using externalHost)
@@ -170,6 +171,13 @@ externalPort = 7798
 externalPublicHost = &quot;xx.xx.xx.xx&quot;
 # The external host public port
 externalPublicPort = 7799
+
+# Define the map bound size
+mapBoundsMinX = -10000
+mapBoundsMinY = -10000
+mapBoundsMaxX = 65536
+mapBoundsMaxY = 65536
+mapCellAreaSize = 100 #smaller areas uses more ram and less cpu
 </code></pre>
 </article>
                     </div>

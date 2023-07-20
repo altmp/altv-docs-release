@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ObjectPool
+    <title>Class LocalObjectPool
    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Class ObjectPool
+    <meta name="title" content="Class LocalObjectPool
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Client_Elements_Pools_ObjectPool__ctor_AltV_Net_Client_Elements_Factories_IEntityFactory_AltV_Net_Client_Elements_Interfaces_IObject__">ObjectPool(IEntityFactory&lt;IObject&gt;)</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Client_Elements_Pools_ObjectPool_GetId_IntPtr_">GetId(IntPtr)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Client_Elements_Pools_LocalObjectPool__ctor_AltV_Net_Client_Elements_Factories_IEntityFactory_AltV_Net_Client_Elements_Interfaces_ILocalObject__">LocalObjectPool(IEntityFactory&lt;ILocalObject&gt;)</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Client_Elements_Pools_LocalObjectPool_GetId_IntPtr_">GetId(IntPtr)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
                             </div>
 
                             
@@ -124,79 +124,79 @@
                               <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
-                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Client.Elements.Pools.ObjectPool">
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Client.Elements.Pools.LocalObjectPool">
 
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d40b860e6e270345c53dc72f2552ae349291344e/api/AltV.Net.Client/Elements/Pools/ObjectPool.cs/#L6">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/7f94c4a5e766441684c88b09c05775a86a0ba6d6/api/AltV.Net.Client/Elements/Pools/LocalObjectPool.cs/#L6">View Source</a>
                                             </li>
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Pools_ObjectPool.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Pools.ObjectPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Pools_LocalObjectPool.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Pools.LocalObjectPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
   
   
-  <h1 id="AltV_Net_Client_Elements_Pools_ObjectPool" data-uid="AltV.Net.Client.Elements.Pools.ObjectPool" class="text-break">Class ObjectPool
+  <h1 id="AltV_Net_Client_Elements_Pools_LocalObjectPool" data-uid="AltV.Net.Client.Elements.Pools.LocalObjectPool" class="text-break">Class LocalObjectPool
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html">EntityPool</a>&lt;<a class="xref" href="AltV.Net.Client.Elements.Interfaces.IObject.html">IObject</a>&gt;</div>
-    <div class="level2"><span class="xref">ObjectPool</span></div>
+    <div class="level1"><a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html">EntityPool</a>&lt;<a class="xref" href="AltV.Net.Client.Elements.Interfaces.ILocalObject.html">ILocalObject</a>&gt;</div>
+    <div class="level2"><span class="xref">LocalObjectPool</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="AltV.Net.Client.Elements.Pools.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Client.Elements.Interfaces.IObject.html">IObject</a>&gt;</div>
-    <div><a class="xref" href="AltV.Net.IReadOnlyEntityPool-1.html">IReadOnlyEntityPool</a>&lt;<a class="xref" href="AltV.Net.Client.Elements.Interfaces.IObject.html">IObject</a>&gt;</div>
+    <div><a class="xref" href="AltV.Net.Client.Elements.Pools.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Client.Elements.Interfaces.ILocalObject.html">ILocalObject</a>&gt;</div>
+    <div><a class="xref" href="AltV.Net.IReadOnlyEntityPool-1.html">IReadOnlyEntityPool</a>&lt;<a class="xref" href="AltV.Net.Client.Elements.Interfaces.ILocalObject.html">ILocalObject</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1__entityFactory">EntityPool&lt;IObject&gt;._entityFactory</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1__entityFactory">EntityPool&lt;ILocalObject&gt;._entityFactory</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Create_AltV_Net_Client_ICore_IntPtr_System_UInt32_">EntityPool&lt;IObject&gt;.Create(ICore, IntPtr, UInt32)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Create_AltV_Net_Client_ICore_IntPtr_System_UInt32_">EntityPool&lt;ILocalObject&gt;.Create(ICore, IntPtr, UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Create_AltV_Net_Client_ICore_IntPtr_">EntityPool&lt;IObject&gt;.Create(ICore, IntPtr)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Create_AltV_Net_Client_ICore_IntPtr_">EntityPool&lt;ILocalObject&gt;.Create(ICore, IntPtr)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Add__0_">EntityPool&lt;IObject&gt;.Add(IObject)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Add__0_">EntityPool&lt;ILocalObject&gt;.Add(ILocalObject)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Remove__0_">EntityPool&lt;IObject&gt;.Remove(IObject)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Remove__0_">EntityPool&lt;ILocalObject&gt;.Remove(ILocalObject)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Remove_IntPtr_">EntityPool&lt;IObject&gt;.Remove(IntPtr)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Remove_IntPtr_">EntityPool&lt;ILocalObject&gt;.Remove(IntPtr)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Get_IntPtr_">EntityPool&lt;IObject&gt;.Get(IntPtr)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Get_IntPtr_">EntityPool&lt;ILocalObject&gt;.Get(IntPtr)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_GetAllEntities">EntityPool&lt;IObject&gt;.GetAllEntities()</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_GetAllEntities">EntityPool&lt;ILocalObject&gt;.GetAllEntities()</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_GetOrCreate_AltV_Net_Client_ICore_IntPtr_System_UInt32_">EntityPool&lt;IObject&gt;.GetOrCreate(ICore, IntPtr, UInt32)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_GetOrCreate_AltV_Net_Client_ICore_IntPtr_System_UInt32_">EntityPool&lt;ILocalObject&gt;.GetOrCreate(ICore, IntPtr, UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_GetOrCreate_AltV_Net_Client_ICore_IntPtr_">EntityPool&lt;IObject&gt;.GetOrCreate(ICore, IntPtr)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_GetOrCreate_AltV_Net_Client_ICore_IntPtr_">EntityPool&lt;ILocalObject&gt;.GetOrCreate(ICore, IntPtr)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_GetEntitiesArray">EntityPool&lt;IObject&gt;.GetEntitiesArray()</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_GetEntitiesArray">EntityPool&lt;ILocalObject&gt;.GetEntitiesArray()</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_OnAdd__0_">EntityPool&lt;IObject&gt;.OnAdd(IObject)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_OnAdd__0_">EntityPool&lt;ILocalObject&gt;.OnAdd(ILocalObject)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_OnRemove__0_">EntityPool&lt;IObject&gt;.OnRemove(IObject)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_OnRemove__0_">EntityPool&lt;ILocalObject&gt;.OnRemove(ILocalObject)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Dispose">EntityPool&lt;IObject&gt;.Dispose()</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Pools.EntityPool-1.html#AltV_Net_Client_Elements_Pools_EntityPool_1_Dispose">EntityPool&lt;ILocalObject&gt;.Dispose()</a>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -222,26 +222,26 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Client.Elements.Pools.html">AltV.Net.Client.Elements.Pools</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.Client.dll</h6>
-  <h5 id="AltV_Net_Client_Elements_Pools_ObjectPool_syntax">Syntax</h5>
+  <h5 id="AltV_Net_Client_Elements_Pools_LocalObjectPool_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ObjectPool : EntityPool&lt;IObject&gt;, IEntityPool&lt;IObject&gt;, IReadOnlyEntityPool&lt;IObject&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class LocalObjectPool : EntityPool&lt;ILocalObject&gt;, IEntityPool&lt;ILocalObject&gt;, IReadOnlyEntityPool&lt;ILocalObject&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Pools_ObjectPool__ctor_AltV_Net_Client_Elements_Factories_IEntityFactory_AltV_Net_Client_Elements_Interfaces_IObject__.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Pools.ObjectPool.%23ctor(AltV.Net.Client.Elements.Factories.IEntityFactory%7BAltV.Net.Client.Elements.Interfaces.IObject%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Pools_LocalObjectPool__ctor_AltV_Net_Client_Elements_Factories_IEntityFactory_AltV_Net_Client_Elements_Interfaces_ILocalObject__.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Pools.LocalObjectPool.%23ctor(AltV.Net.Client.Elements.Factories.IEntityFactory%7BAltV.Net.Client.Elements.Interfaces.ILocalObject%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d40b860e6e270345c53dc72f2552ae349291344e/api/AltV.Net.Client/Elements/Pools/ObjectPool.cs/#L8">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/7f94c4a5e766441684c88b09c05775a86a0ba6d6/api/AltV.Net.Client/Elements/Pools/LocalObjectPool.cs/#L8">View Source</a>
   </span>
-  <a id="AltV_Net_Client_Elements_Pools_ObjectPool__ctor_" data-uid="AltV.Net.Client.Elements.Pools.ObjectPool.#ctor*"></a>
-  <h4 id="AltV_Net_Client_Elements_Pools_ObjectPool__ctor_AltV_Net_Client_Elements_Factories_IEntityFactory_AltV_Net_Client_Elements_Interfaces_IObject__" data-uid="AltV.Net.Client.Elements.Pools.ObjectPool.#ctor(AltV.Net.Client.Elements.Factories.IEntityFactory{AltV.Net.Client.Elements.Interfaces.IObject})">ObjectPool(IEntityFactory&lt;IObject&gt;)</h4>
+  <a id="AltV_Net_Client_Elements_Pools_LocalObjectPool__ctor_" data-uid="AltV.Net.Client.Elements.Pools.LocalObjectPool.#ctor*"></a>
+  <h4 id="AltV_Net_Client_Elements_Pools_LocalObjectPool__ctor_AltV_Net_Client_Elements_Factories_IEntityFactory_AltV_Net_Client_Elements_Interfaces_ILocalObject__" data-uid="AltV.Net.Client.Elements.Pools.LocalObjectPool.#ctor(AltV.Net.Client.Elements.Factories.IEntityFactory{AltV.Net.Client.Elements.Interfaces.ILocalObject})">LocalObjectPool(IEntityFactory&lt;ILocalObject&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ObjectPool(IEntityFactory&lt;IObject&gt; objectFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public LocalObjectPool(IEntityFactory&lt;ILocalObject&gt; objectFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -254,7 +254,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AltV.Net.Client.Elements.Factories.IEntityFactory-1.html">IEntityFactory</a>&lt;<a class="xref" href="AltV.Net.Client.Elements.Interfaces.IObject.html">IObject</a>&gt;</td>
+        <td><a class="xref" href="AltV.Net.Client.Elements.Factories.IEntityFactory-1.html">IEntityFactory</a>&lt;<a class="xref" href="AltV.Net.Client.Elements.Interfaces.ILocalObject.html">ILocalObject</a>&gt;</td>
         <td><span class="parametername">objectFactory</span></td>
         <td></td>
       </tr>
@@ -264,13 +264,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Pools_ObjectPool_GetId_IntPtr_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Pools.ObjectPool.GetId(IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Pools_LocalObjectPool_GetId_IntPtr_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Pools.LocalObjectPool.GetId(IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d40b860e6e270345c53dc72f2552ae349291344e/api/AltV.Net.Client/Elements/Pools/ObjectPool.cs/#L12">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/7f94c4a5e766441684c88b09c05775a86a0ba6d6/api/AltV.Net.Client/Elements/Pools/LocalObjectPool.cs/#L12">View Source</a>
   </span>
-  <a id="AltV_Net_Client_Elements_Pools_ObjectPool_GetId_" data-uid="AltV.Net.Client.Elements.Pools.ObjectPool.GetId*"></a>
-  <h4 id="AltV_Net_Client_Elements_Pools_ObjectPool_GetId_IntPtr_" data-uid="AltV.Net.Client.Elements.Pools.ObjectPool.GetId(IntPtr)">GetId(IntPtr)</h4>
+  <a id="AltV_Net_Client_Elements_Pools_LocalObjectPool_GetId_" data-uid="AltV.Net.Client.Elements.Pools.LocalObjectPool.GetId*"></a>
+  <h4 id="AltV_Net_Client_Elements_Pools_LocalObjectPool_GetId_IntPtr_" data-uid="AltV.Net.Client.Elements.Pools.LocalObjectPool.GetId(IntPtr)">GetId(IntPtr)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -310,7 +310,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">AltV.Net.Client.Elements.Pools.EntityPool&lt;AltV.Net.Client.Elements.Interfaces.IObject&gt;.GetId(IntPtr)</span></div>
+  <div><span class="xref">AltV.Net.Client.Elements.Pools.EntityPool&lt;AltV.Net.Client.Elements.Interfaces.ILocalObject&gt;.GetId(IntPtr)</span></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="AltV.Net.Client.Elements.Pools.IEntityPool-1.html">IEntityPool&lt;TEntity&gt;</a>
