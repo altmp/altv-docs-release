@@ -143,6 +143,7 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- Renamed Object to LocalObject
 - .id represents local id now, if you need same id as on server use .remoteId
+- getPermissionState returns bool now
 </code></pre>
 </div>
 <h3 id="added">Added</h3>
@@ -190,6 +191,7 @@
 - gta v backup system
 - resetMinimapComponentPosition method
 - localstorage has method
+- suspensionHeight setter &amp; getter
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
@@ -215,6 +217,7 @@
 - wrong vehicle position on streamin after few restreams
 - playing animation directly after another one wasnt synced
 - entity models are not freed from memory
+- taskSynchronizedScene wasnt synced
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
@@ -264,6 +267,9 @@
 - addDecoration, removeDecoration, clearDecorations, getDecorations method for player
 - setVoiceExternalPublic &amp; setVoiceExternal method
 - player netOwnershipDisabled property
+- vehicle brakeLevel, accelerationLevel getter
+- requestSyncedScene, startSyncedScene, stopSyncedScene, updateSyncedScene events
+- vehicle hornActive getter
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
@@ -295,6 +301,7 @@
 - voiceConnection event
 - getVoiceConnectionState method
 - new blip api methods
+- vehicle steeringAngle getter
 </code></pre>
 </div>
 <h3 id="fixed-2">Fixed</h3>
