@@ -194,6 +194,9 @@
 - suspensionHeight setter &amp; getter
 - 3d audio output for webview
 - alt.getVersion, alt.getBranch, alt.getLocale in webviews
+- player IsStealthy &amp; IsCrouching getter
+- weaponTintIndex &amp; currentWeapontintindex getter
+- vehicle steeringAngle setter
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
@@ -224,6 +227,8 @@
 - (max)health, (max)armor getter from remoteplayers wasn't always correct
 - parachute sync
 - connect to server via ipv6 adress
+- position of towtruck hook on streamin
+- loadCloudHat native
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
@@ -268,7 +273,7 @@
 - ammo getter &amp; setter method
 - canAttachCars to vehicleModelInfo
 - timestamp for entitys
-- hasWeapon, hasWeaponComponent, AmmoSpecialType, ammoFlags, ammoMax method for player
+- hasWeapon, AmmoSpecialType, ammoFlags, ammoMax method for player
 - removeAllAmmo parameter for removeAllWeapons
 - blip dimension setter, blips can be shown to specific players
 - addDecoration, removeDecoration, clearDecorations, getDecorations method for player
@@ -282,6 +287,7 @@
 - entities limit can be increased in server.toml
 - playerheal event
 - setter &amp; getter to set streaminglimits &amp; threadcounts
+- vehicle passenger getter
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
@@ -295,6 +301,7 @@
 - entity attachto api didnt accept all bone ids
 - voiceserver port config did not apply
 - attachTo was desync on netowner change
+- projectile sync
 </code></pre>
 </div>
 <h2 id="server--client">Server &amp; Client</h2>
@@ -316,6 +323,7 @@
 - getVoiceConnectionState method
 - new blip api methods
 - vehicle steeringAngle getter
+- player hasWeaponComponent method
 </code></pre>
 </div>
 <h3 id="fixed-2">Fixed</h3>

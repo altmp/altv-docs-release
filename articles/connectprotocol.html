@@ -108,9 +108,11 @@
                     <div class="content-column Conceptual">
 
                             
-                            <div class="sideaffix hide-when-search" data-noindex="">
+                            <div class="sideaffix hide-when-search empty" data-noindex="" style="display: none;">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#direct-connect-protocol">Direct Connect Protocol</a><ul class="level2 nav bs-docs-sidenav direct-connect-protocol"><li><a href="#cdn-off">CDN off</a></li><li><a href="#cdn-on">CDN on</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix">
+                                <div></div>
+                              </div>
                             </div>
 
                             
@@ -134,13 +136,19 @@
 
 <h1 id="direct-connect-protocol">Direct Connect Protocol</h1>
 
-<p>This protocol can be used, to connect to an alt:V server over the browser.</p>
-<h2 id="cdn-off">CDN off</h2>
-<p>If your server doesn't use the cdn function, you need to use the IP-Address and the port of the server.</p>
-<p><code>altv://connect/${IP_ADDRESS}:${PORT}?password=${PASSWORD}</code> or a example <code>altv://connect/127.0.0.1:7788?password=xyz</code></p>
-<h2 id="cdn-on">CDN on</h2>
-<p>If you are using the cdn function, you need to use the direct connect url to the cdn.</p>
-<p><code>altv://connect/http://{CDN_URL}?password=${PASSWORD}</code> or a example <code>altv://connect/http://connect.example.com?password=xyz</code></p>
+<p>This protocol can be used to connect to an alt:V server over the browser.</p>
+<p>Protocol format:</p>
+<p><code>altv://connect/ADDRESS?password=PASSWORD</code> or <code>altv://connect/ADDRESS</code></p>
+<ul>
+<li>ADDRESS is <a href="https://www.urlencoder.org/">urlencoded</a> connection address, exactly like used in &quot;Direct connect&quot; window</li>
+<li>PASSWORD (optional) is <a href="https://www.urlencoder.org/">urlencoded</a> password</li>
+</ul>
+<p>Example:</p>
+<ul>
+<li><code>my.cdn.server:80</code> -&gt; <code>altv://connect/my.cdn.server%3A80</code></li>
+<li><code>http://my.cdn.server</code> -&gt; <code>altv://connect/http%3A%2F%2Fmy.cdn.server</code></li>
+<li><code>[::1]:1234</code> with password <code>test</code> -&gt; <code>altv://connect/%5B%3A%3A1%5D%3A1234?password=test</code></li>
+</ul>
 </article>
                     </div>
 
