@@ -158,7 +158,7 @@
       <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_isRemote">isRemote</a>
     </div>
     <div>
-      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_remoteId">remoteId</a>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_remoteID">remoteID</a>
     </div>
     <div>
       <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByID">getByID(BaseObjectType, number)</a>
@@ -1482,7 +1482,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public getEventListeners(eventName: string): (senderElement: RmlElement, ...args: any[]) =&gt; void[]</code></pre>
+    <pre><code class="lang-typeScript hljs">public getEventListeners(eventName: string): readonly (senderElement: RmlElement, ...args: any[]) =&gt; void[]</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1514,7 +1514,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">(senderElement: RmlElement, ...args: any[]) =&gt; void[]</span></td>
+        <td><span class="xref">readonly (senderElement: RmlElement, ...args: any[]) =&gt; void[]</span></td>
         <td></td>
       </tr>
     </tbody>
