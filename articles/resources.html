@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#resources">Resources</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#types">Types</a><ul class="level2 nav bs-docs-sidenav types"><li><a href="#js">js</a></li><li><a href="#csharp">csharp</a></li><li><a href="#dlc">dlc</a></li><li><a href="#asset-pack">asset-pack</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#resources">Resources</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#types">Types</a><ul class="level2 nav bs-docs-sidenav types"><li><a href="#js">js</a></li><li><a href="#csharp">csharp</a></li><li><a href="#dlc">dlc</a><ul class="level3 nav bs-docs-sidenav dlc"><li><a href="#replacements">Replacements</a><ul class="level4 nav bs-docs-sidenav replacements"><li><a href="#rpf">rpf</a></li></ul></li></ul></li><li><a href="#asset-pack">asset-pack</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -137,7 +137,7 @@
 <p>Resources are one of the main parts of the alt:V server. They handle the data and gamescripts for server- and clientside used by the alt:V server.<br>
 Resources a represented as a subfolder of the <code>resources/</code> folder in the alt:V server root.</p>
 <h1 id="resourcetoml">resource.toml</h1>
-<p>A resource (folder) is required to contain at minimum a <code>resource.toml</code> configuration file. Depending on which resource type you are using, the properties you specify in the config file may differ between each other.<br>
+<p>A resource (folder) is required to contain at minimum a <code>resource.toml</code> configuration file (except rpf resources, see rpf for more info). Depending on which resource type you are using, the properties you specify in the config file may differ between each other.<br>
 A resource has a folder structure like this:</p>
 <div class="nohljsln">
 <pre><code>resources/
@@ -156,6 +156,7 @@ For more information see: <a href="../js/articles/index.html">Getting Started</a
 For more information see: <a href="../cs/articles/index.html">Getting Started</a></p>
 <h2 id="dlc">dlc</h2>
 <p>This resource type is for providing modded content (eg Vehicles, MLOs, Clothes) to the client. You need a <code>stream.toml</code> to get this type to work.</p>
+<p>Since v15 this resource type also allows to replace GTA base files. See <code>overrides</code> below.</p>
 <p>stream.toml</p>
 <table>
 <thead>
@@ -177,8 +178,30 @@ For more information see: <a href="../cs/articles/index.html">Getting Started</a
 <td style="text-align: center;">gxt</td>
 <td style="text-align: center;">Path to the gxt files.</td>
 </tr>
+<tr>
+<td style="text-align: center;">overrides</td>
+<td style="text-align: center;">Game file mount path and path to the replacement (Format: [MOUNT_PATH = REPLACEMENT_PATH])</td>
+</tr>
 </tbody>
 </table>
+<h3 id="replacements">Replacements</h3>
+<p>To override a file you need to first it's full mount path. Mount path is specified in format <code>group:/path/to/file</code>. See <a href="https://gist.githubusercontent.com/martonp96/59f731446c7f17db3f400c2be458c4a4/raw/38b73edc0a61cbd24383d75a41c515718aafded6/gistfile1.txt">list of mounts</a>.</p>
+<p>Example replacement:</p>
+<p>File structure:</p>
+<div class="nohljsln">
+<pre><code>resources/
+  [RESOURCE_NAME]/
+    replaces/
+      water_empty.xml
+    resource.toml
+</code></pre>
+</div>
+<p>stream.toml</p>
+<div class="nohljsln">
+<pre><code>[overrides]
+'commoncrc:/data/levels/gta5/water.xml' = 'replaces/water_empty.xml'
+</code></pre>
+</div>
 <h2 id="asset-pack">asset-pack</h2>
 <p>This resource type is to provide content to other resources (eg Pictures, Videos, WebPages, JSON files). This content can be provided througt multiple ways:</p>
 <ol>
@@ -191,6 +214,35 @@ For more information see: <a href="../cs/articles/index.html">Getting Started</a
 client-files = [ ... ]
 </code></pre>
 </div>
+<h2 id="rpf">rpf</h2>
+<p>This resource type allows you to load .rpf DLC directly. All .rpf archives are loaded before game start, and therefore can load anything what normal singleplayer DLC can.</p>
+<p>resource.toml</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Key</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">type</td>
+<td style="text-align: center;"><code>rpf</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">main</td>
+<td style="text-align: center;">Path to the .rpf file</td>
+</tr>
+</tbody>
+</table>
+<p>To simplify loading process, you can load rpf DLCs without creating <code>resource.toml</code>. Just create a resource folder and put a <code>dlc.rpf</code> file in it.</p>
+<p>Example:</p>
+<ul>
+<li>Download <a href="https://www.gta5-mods.com/maps/community-mission-row-pd/download/75282">https://www.gta5-mods.com/maps/community-mission-row-pd/download/75282</a></li>
+<li>Create <code>server/resources/nice_police_mlo</code> folder</li>
+<li>Copy <code>/RageMP and SP/mrpd/dlc.rpf</code> to <code>nice_police_mlo</code> folder</li>
+<li>Add <code>nice_police_mlo</code> to resources list in server.toml</li>
+</ul>
 </article>
                     </div>
 
