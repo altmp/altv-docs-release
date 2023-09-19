@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#audio-filters">Audio filters</a><ul class="level2 nav bs-docs-sidenav audio-filters"><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#audio-categories">Audio categories</a></li></ul></li><li><a href="#example">Example</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#audio-filters">Audio filters</a><ul class="level2 nav bs-docs-sidenav audio-filters"><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#audio-categories">Audio categories</a><ul class="level4 nav bs-docs-sidenav audio-categories"><li><a href="#example">Example</a></li></ul></li><li><a href="#controlling-volume">Controlling volume</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -134,7 +134,7 @@
 
 <h1 id="audio-filters">Audio filters</h1>
 
-<p>alt:V Audio and Voice APIs support custom filters. Filters should be created on client and allow server developers to add such effects as distortion, compressor, echo etc.</p>
+<p>alt:V Audio and Voice APIs support custom filters. Filters should be created on client side and allow server developers to add effects such as distortion, compressor, echo etc.</p>
 <h2 id="usage">Usage</h2>
 <p><a href="https://docs.altv.mp/js/api/alt-client.AudioFilter.html">AudioFilter class in JS API reference</a><br></p>
 <h3 id="audio-categories">Audio categories</h3>
@@ -145,22 +145,25 @@
 <li><code>altv_voice_megaphone</code></li>
 <li><code>altv_voice_whisper</code></li>
 </ul>
-<h2 id="example">Example</h2>
-<pre><code class="lang-js">const filter = new AudioFilter('walkietalkie')
-filter.addBqfEffect(0, 1400, 0, 0.86, 0, 0, 1);
-filter.addBqfEffect(1, 900, 0, 0.83, 0, 0, 2);
-filter.addDistortionEffect(0, -2.95, -0.05, -0.08, 0.5, 3);
+<h4 id="example">Example</h4>
+<pre><code class="lang-js">const walkieTalkieFilter = new AudioFilter('walkietalkie')
+walkieTalkieFilter.addBqfEffect(0, 1400, 0, 0.86, 0, 0, 1);
+walkieTalkieFilter.addBqfEffect(1, 900, 0, 0.83, 0, 0, 2);
+walkieTalkieFilter.addDistortionEffect(0, -2.95, -0.05, -0.08, 0.5, 3);
 
-const filter2 = new AudioFilter('megaphone');
-filter2.addBqfEffect(0, 2000, 0, 1, 0, 0, 1);
-filter2.addBqfEffect(1, 1000, 0, 0.86, 0, 0, 2);
-filter2.addDistortionEffect(0, -2.95, -0.05, -0.08, 0.25, 3);
-filter2.addCompressor2Effect(5, -15, 3, 10, 200, 4);
-filter2.audioCategory = 'altv_voice_megaphone';
+const megaphoneFilter = new AudioFilter('megaphone');
+megaphoneFilter.addBqfEffect(0, 2000, 0, 1, 0, 0, 1);
+megaphoneFilter.addBqfEffect(1, 1000, 0, 0.86, 0, 0, 2);
+megaphoneFilter.addDistortionEffect(0, -2.95, -0.05, -0.08, 0.25, 3);
+megaphoneFilter.addCompressor2Effect(5, -15, 3, 10, 200, 4);
+megaphoneFilter.audioCategory = 'altv_voice_megaphone';
 
-const filter3 = new AudioFilter('whisper');
-filter3.audioCategory = 'altv_voice_whisper';
+const whisperFilter = new AudioFilter('whisper');
+whisperFilter.audioCategory = 'altv_voice_whisper';
 </code></pre>
+<h3 id="controlling-volume">Controlling volume</h3>
+<p>In case default volume of specific audio categories is too quiet, you can edit audio categories.</p>
+<p>See <a href="https://docs.altv.mp/articles/audio.html#examples">Audio category</a> for more info.</p>
 </article>
                     </div>
 

@@ -197,15 +197,16 @@ audio.play();
 <h1 id="audio-categories">Audio categories</h1>
 <p>GTA has an audio category system, which defines basic audio parameters like volume, distance, etc. Audio categories are located in <code>categories.dat22.rel</code> file.</p>
 <p>While it's possible to stream your own category file (<code>audio:/config/categories.dat22.rel</code>, see <a href="resources.html#replacements">Replacements docs</a> for more info), you can modify existing categories (e.g. unused ones) on runtime using AudioCategory API.</p>
-<p><a href="https://docs.altv.mp/js/api/alt-client.Audio.html">AudioCategory class in JS API reference</a><br></p>
+<p><a href="https://docs.altv.mp/js/api/alt-client.AudioCategory.html">AudioCategory class in JS API reference</a><br></p>
 <h2 id="examples">Examples</h2>
-<p>Change volume of all <code>radio</code> sounds</p>
+<p>Change volume of all <code>radio</code> sounds.</p>
 <pre><code class="lang-js">const category = alt.AudioCategory.getForName(&quot;radio&quot;);
 category.volume = 10;
 </code></pre>
-<p>Repurpose unused category to use in your own sounds</p>
-<pre><code class="lang-js">const radio = alt.AudioCategory.getForName(&quot;radio&quot;);
-const category = alt.AudioCategory.getForName(&quot;video_editor_weapons_guns_bullet_impacts&quot;);
+<p>Repurpose unused category to use in your own sounds, for example to have a radio like audio category that is much louder.</p>
+<p>Audio categories starting with <code>video_editor_*</code> are in most cases unused and can be used for this.</p>
+<pre><code class="lang-js">const radio = alt.AudioCategory.getForName(&quot;radio&quot;); // Using the game radio audio category as source
+const category = alt.AudioCategory.getForName(&quot;video_editor_weapons_guns_bullet_impacts&quot;); // This will be our target 'custom' audio category
 
 category.volume = 1000;
 category.distanceRolloffScale = radio.distanceRolloffScale;
@@ -222,12 +223,14 @@ category.pitch = radio.pitch;
 category.lowPassFilterCutoff = radio.lowPassFilterCutoff;
 category.highPassFilterCutoff = radio.highPassFilterCutoff;
 
+// Lets use our 'custom' audio category to play audio
 const output = new alt.AudioOutputFrontend(&quot;video_editor_weapons_guns_bullet_impacts&quot;);
 const audio = new alt.Audio(&quot;https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg&quot;);
 audio.addOutput(output);
 audio.play();
 </code></pre>
 <p>You can find list of all available categories in <a href="https://docs.altv.mp/js/api/alt-client.AudioCategories.html">AudioCategories enum</a></p>
+<p>See <a href="audio_filters.html">Audio filters</a> for alt:V Voice examples using audio categories.</p>
 </article>
                     </div>
 
