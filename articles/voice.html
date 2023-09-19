@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#voice-api">Voice API</a><ul class="level2 nav bs-docs-sidenav voice-api"><li><a href="#voice-channels">Voice channels</a><ul class="level3 nav bs-docs-sidenav voice-channels"><li><a href="#voicechannel-constructor">VoiceChannel constructor</a></li><li><a href="#audio-filters">Audio filters</a></li><li><a href="#audio-categories">Audio categories</a></li><li><a href="#example">Example</a></li></ul></li><li><a href="#voice-categories">Voice categories</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#voice-api">Voice API</a><ul class="level2 nav bs-docs-sidenav voice-api"><li><a href="#voice-channels">Voice channels</a><ul class="level3 nav bs-docs-sidenav voice-channels"><li><a href="#voicechannel-constructor">VoiceChannel constructor</a></li><li><a href="#audio-filters">Audio filters</a></li><li><a href="#audio-categories">Audio categories</a></li><li><a href="#example">Example</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -143,7 +143,8 @@
 </code></pre>
 </div>
 <h2 id="voice-channels">Voice channels</h2>
-<p><a href="https://docs.altv.mp/js/api/alt-client.VoiceChannel.html">VoiceChannel class in JS API reference</a><br></p>
+<p><a href="https://docs.altv.mp/js/api/alt-client.VoiceChannel.html">VoiceChannel class in JS API reference</a><br>
+<a href="https://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.VoiceChannel.html">VoiceChannel class in C# API reference</a><br></p>
 <p>To allow players to hear eachother you need to create a voice channel and add the players that should hear each other there.</p>
 <p>If two players are in two different voice channels at the same time, category will be decided by <code>channel.priority</code>. If two channels are of same priority, non-spatial (2D) voice is selected.</p>
 <h3 id="voicechannel-constructor">VoiceChannel constructor</h3>
@@ -160,7 +161,7 @@ voice.filter = alt.hash('walkietalkie');
 </code></pre>
 <h3 id="audio-categories">Audio categories</h3>
 <p>You can set a custom audio category to a voice channel. In order to do that, you need to create an audio filter and set category on it.</p>
-<p>See <a href="audio_filters.html">Audio filters</a> for more info.</p>
+<p>See <a href="audio_filters.html">Audio filters</a>, audio category section for more info.</p>
 <h3 id="example">Example</h3>
 <pre><code class="lang-js">const globalVoice = new alt.VoiceChannel(true, 15);
 
@@ -172,7 +173,6 @@ alt.on('playerDisconnect', (player) =&gt; {
   globalVoice.removePlayer(player);
 });
 </code></pre>
-<h2 id="voice-categories">Voice categories</h2>
 </article>
                     </div>
 

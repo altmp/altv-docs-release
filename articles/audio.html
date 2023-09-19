@@ -138,7 +138,8 @@
 <p>The system also supports custom filters (see <a href="voice.html">Voice docs</a>) and GTA audio categories.</p>
 <h2 id="usage">Usage</h2>
 <p><a href="https://docs.altv.mp/js/api/alt-client.Audio.html">Audio class in JS API reference</a><br>
-<a href="https://docs.altv.mp/js/api/alt-client.AudioOutputWorld.html">AudioOutputWorld class in JS API reference</a><br>
+<a href="https://docs.altv.mp/cs/api/AltV.Net.Client.Elements.Entities.Audio.html">Audio class in C# API reference</a><br></p>
+<p><a href="https://docs.altv.mp/js/api/alt-client.AudioOutputWorld.html">AudioOutputWorld class in JS API reference</a><br>
 <a href="https://docs.altv.mp/js/api/alt-client.AudioOutputAttached.html">AudioOutputAttached class in JS API reference</a><br>
 <a href="https://docs.altv.mp/js/api/alt-client.AudioOutputFrontend.html">AudioOutputFrontend class in JS API reference</a><br></p>
 <p>In order to use Audio API you need to create Audio instance and add one or multiple audio outputs to it.</p>
@@ -197,7 +198,8 @@ audio.play();
 <h1 id="audio-categories">Audio categories</h1>
 <p>GTA has an audio category system, which defines basic audio parameters like volume, distance, etc. Audio categories are located in <code>categories.dat22.rel</code> file.</p>
 <p>While it's possible to stream your own category file (<code>audio:/config/categories.dat22.rel</code>, see <a href="resources.html#replacements">Replacements docs</a> for more info), you can modify existing categories (e.g. unused ones) on runtime using AudioCategory API.</p>
-<p><a href="https://docs.altv.mp/js/api/alt-client.AudioCategory.html">AudioCategory class in JS API reference</a><br></p>
+<p><a href="https://docs.altv.mp/js/api/alt-client.AudioCategory.html">AudioCategory class in JS API reference</a><br>
+<a href="https://docs.altv.mp/cs/api/AltV.Net.Client.Elements.Data.AudioCategory.html">AudioCategory class in C# API reference</a><br></p>
 <h2 id="examples">Examples</h2>
 <p>Change volume of all <code>radio</code> sounds.</p>
 <pre><code class="lang-js">const category = alt.AudioCategory.getForName(&quot;radio&quot;);
