@@ -135,6 +135,7 @@
 <h1 id="entity-factories">Entity factories</h1>
 
 <p>Entity factories allows you to optimize your server performance by defining the data you need to store in a player or vehicle on compile time. This allows much faster data access than via .SetData, <code>.GetData</code>.</p>
+<p><strong>NOTE: For gamemodes extending <code>AsyncResource</code>, please read <a href="async-entity-factories.html">Async Entity Factories</a>.</strong></p>
 <h2 id="step-1-create-the-class">Step 1, Create the class</h2>
 <p>Defining your custom player or vehicle class by extending <code>Player</code> or <code>Vehicle</code>.
 You need to implement the default constructor of <code>Player</code> or <code>Vehicle</code> as well.</p>
@@ -172,19 +173,11 @@ This will look like the code below.</p>
   }
 }
 </code></pre>
-<p>This also works when you extend <code>AsyncResource</code> ect.</p>
 <h2 id="vehicle-class">Vehicle class</h2>
-<p>It works the same for vehicles, but with a small difference, because you can create vehicles via the constructor by defining the vehicle model, position and rotation.</p>
-<p>Thats why you most likely will add a second constructor to the vehicle that looks like this.</p>
+<p>It works the same for vehicles, eg:</p>
 <pre><code class="lang-csharp">public class MyVehicle : Vehicle
     {
         public int MyData { get; set; }
-
-        // This constructor is used for creation via constructor
-        public MyVehicle(ICore core, uint model, Position position, Rotation rotation) : base(core, model, position, rotation)
-        {
-            MyData = 7;
-        }
 
         // This constructor is used for creation via entity factory
         public MyVehicle(ICore core, IntPtr nativePointer, ushort id) : base(core, nativePointer, id)
