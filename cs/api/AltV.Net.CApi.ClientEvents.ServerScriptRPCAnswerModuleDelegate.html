@@ -131,7 +131,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/3cb72d2e51942141f89ff5ffae8da90993e537bc/api/AltV.Net.CApi/Events/ClientEvents.cs/#L89">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.CApi/Events/ClientEvents.cs/#L89">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_CApi_ClientEvents_ServerScriptRPCAnswerModuleDelegate.md&amp;value=---%0Auid%3A%20AltV.Net.CApi.ClientEvents.ServerScriptRPCAnswerModuleDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -149,7 +149,7 @@
   <h6><strong>Assembly</strong>: AltV.Net.CApi.dll</h6>
   <h5 id="AltV_Net_CApi_ClientEvents_ServerScriptRPCAnswerModuleDelegate_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void ServerScriptRPCAnswerModuleDelegate(ushort answerId, IntPtr answers, ulong size, string answerError);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void ServerScriptRPCAnswerModuleDelegate(ushort answerId, IntPtr answer, string answerError);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -168,12 +168,7 @@
       </tr>
       <tr>
         <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">answers</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt64</span></td>
-        <td><span class="parametername">size</span></td>
+        <td><span class="parametername">answer</span></td>
         <td></td>
       </tr>
       <tr>
