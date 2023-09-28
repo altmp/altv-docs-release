@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#cloud-auth">Cloud Auth</a><ul class="level2 nav bs-docs-sidenav cloud-auth"><li><a href="#faq">FAQ</a><ul class="level3 nav bs-docs-sidenav faq"><li><a href="#what-is-cloud-auth">What is cloud auth?</a></li><li><a href="#how-secure-is-cloud-auth">How secure is cloud auth?</a></li><li><a href="#how-does-the-cloud-auth-system-work">How does the Cloud Auth system work?</a></li><li><a href="#can-a-client-spoof-or-tamper-with-the-unique-identifier">Can a client spoof or tamper with the unique identifier?</a></li><li><a href="#what-can-change-the-unique-cloud-auth-identifier">What can change the unique Cloud Auth identifier?</a></li><li><a href="#will-switching-rockstar-accounts-change-the-id">Will switching Rockstar accounts change the id?</a></li><li><a href="#can-i-create-my-own-cloud-auth-implementation-or-use-it-outside-of-altv">Can I create my own cloud auth implementation or use it outside of alt:V?</a></li></ul></li><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#possible-errors">Possible errors:</a></li></ul></li><li><a href="#example">Example</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#cloud-auth">Cloud Auth</a><ul class="level2 nav bs-docs-sidenav cloud-auth"><li><a href="#faq">FAQ</a><ul class="level3 nav bs-docs-sidenav faq"><li><a href="#what-is-cloud-auth">What is cloud auth?</a></li><li><a href="#how-secure-is-cloud-auth">How secure is cloud auth?</a></li><li><a href="#how-does-the-cloud-auth-system-work">How does the cloud auth system work?</a></li><li><a href="#can-a-client-spoof-or-tamper-with-the-unique-identifier">Can a client spoof or tamper with the unique identifier?</a></li><li><a href="#what-can-change-the-unique-cloud-auth-identifier">What can change the unique cloud auth identifier?</a></li><li><a href="#will-switching-rockstar-accounts-change-the-id">Will switching Rockstar accounts change the id?</a></li><li><a href="#can-i-create-my-own-cloud-auth-implementation-or-use-it-outside-of-altv">Can I create my own cloud auth implementation or use it outside of alt:V?</a></li></ul></li><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#possible-errors">Possible errors:</a></li></ul></li><li><a href="#example">Example</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -147,13 +147,13 @@ This system uses the alt:V backend to create a special ID for each player, which
 <h3 id="how-secure-is-cloud-auth">How secure is cloud auth?</h3>
 <p>The Cloud Auth system is highly secure.<br>
 It utilizes our backend for setting up and confirming client identifiers, ensuring secure connections, protect against spoofing and adding an extra layer of security to the process.</p>
-<h3 id="how-does-the-cloud-auth-system-work">How does the Cloud Auth system work?</h3>
+<h3 id="how-does-the-cloud-auth-system-work">How does the cloud auth system work?</h3>
 <p>When a client connects to the server, a request can be made to the alt:V backend.<br>
 This request retrieves the associated unique identifier for the client's Rockstar account, which then can be used to verify and authenticate the client.</p>
 <h3 id="can-a-client-spoof-or-tamper-with-the-unique-identifier">Can a client spoof or tamper with the unique identifier?</h3>
 <p>No, due to the involvement of our backend in the process, clients cannot spoof or manipulate their unique identifiers.<br>
 Every operation is verified through our backend, making sure each player's unique ID stays correct and genuine.</p>
-<h3 id="what-can-change-the-unique-cloud-auth-identifier">What can change the unique Cloud Auth identifier?</h3>
+<h3 id="what-can-change-the-unique-cloud-auth-identifier">What can change the unique cloud auth identifier?</h3>
 <p>The unique cloud auth identifier is strictly linked to your Rockstar account so changing the Rockstar account will change the ID.<br>
 This ID isn't reliant on your hardware or any software.<br>
 If a stricter verification method is needed, you can consider incorporating additional checks such as hardware ID and other options.</p>
@@ -167,7 +167,7 @@ This makes it impossible to reproduce an independent cloud auth system.</p>
 <h2 id="usage">Usage</h2>
 <p><a href="https://docs.altv.mp/js/api/alt-server.Player.html#_altmp_altv_types_alt_server_Player_requestCloudID">Player method in JS API reference</a> <br>
 <a href="https://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.ConnectionInfo.html#AltV_Net_Elements_Entities_ConnectionInfo_RequestCloudId">Player method in C# API reference</a> <br>
-<a href="https://docs.altv.mp/js/api/alt-server.IConnectionInfo.html#_altmp_altv_types_alt_server_IConnectionInfo_requestCloudID">IConnectionInfo in JS API reference</a>
+<a href="https://docs.altv.mp/js/api/alt-server.IConnectionInfo.html#_altmp_altv_types_alt_server_IConnectionInfo_requestCloudID">IConnectionInfo in JS API reference</a> <br>
 <a href="https://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.IConnectionInfo.html#AltV_Net_Elements_Entities_IConnectionInfo_RequestCloudId">IConnectionInfo in C# API reference</a></p>
 <p>Keep in mind that this method is async.</p>
 <div class="WARNING">
@@ -178,7 +178,9 @@ This makes it impossible to reproduce an independent cloud auth system.</p>
 <p>In case of failure method rejects with a string, identifying the problem</p>
 <h3 id="possible-errors">Possible errors:</h3>
 <ul>
+<li><code>NO_BENEFIT</code> - The server doesn't have the required benefit unlocked</li>
 <li><code>NO_LICENSE</code> - Indicates that the player does not have valid GTA V license (player will be kicked by the server automatically soon)</li>
+<li><code>NO_TOKEN_SPECIFIED</code> - No token specified in the server configuration file (server.toml)</li>
 <li><code>SERVICE_UNAVAILABLE</code> - Indicates that Cloud Auth service is down.</li>
 <li><code>INTERNAL_ERROR</code>, <code>WRONG_REQUEST</code> or any other string - Identifies internal service problem, should not happen. If received, please open an issue on our <a href="https://github.com/altmp/altv-issues/issues">Issue tracker</a></li>
 </ul>

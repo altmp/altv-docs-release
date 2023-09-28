@@ -155,7 +155,7 @@ and third is the custom user data passed to the callback. The user data is optio
     auto event = static_cast&lt;const alt::CPlayerConnectEvent*&gt;(ev);
 
     // Gets the player that connected to the server
-    alt::Ref&lt;alt::IPlayer*&gt; player = event-&gt;GetTarget();
+    alt::IPlayer* player = event-&gt;GetTarget();
     // Gets the connect reason
     alt::StringView reason = event-&gt;GetReason();
 
@@ -191,7 +191,7 @@ and to cast it to its corresponding event class.</p>
         auto event = static_cast&lt;const alt::CPlayerConnectEvent*&gt;(ev);
 
         // Gets the player that connected to the server
-        alt::Ref&lt;alt::IPlayer*&gt; player = event-&gt;GetTarget();
+        alt::IPlayer* player = event-&gt;GetTarget();
         // Gets the connect reason
         alt::StringView reason = event-&gt;GetReason();
 
