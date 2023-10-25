@@ -137,7 +137,7 @@
 <p>Depending on the number of players, it may be necessary to run the voice server on an external server, for example, to route network traffic to another network card or to use dedicated resources for the voice server.</p>
 <p>This article deals with the setup of the external voice server and the connection to the alt:V server.</p>
 <h2 id="setup-external-voice-server">Setup external voice server</h2>
-<p>First of all, the voice server must be downloaded, the links for this can be found in the <a href="https://docs.altv.mp/articles/cdn_links.html">CDN</a> article under the topics Windows Server and Linux Server.</p>
+<p>First of all, the voice server must be downloaded, this can be done automatically with <a href="https://github.com/altmp/altv-pkg">altv-pkg</a> or manually, the links for this can be found in the <a href="https://docs.altv.mp/articles/cdn_links.html">CDN</a> article under the topics Windows Server and Linux Server.</p>
 <p>After the download, the voice server can be placed on any server (it can also be the same device as the alt:V server).</p>
 <p>To configure it create a file named voice.toml, add the following content and adjust it accordingly:</p>
 <pre><code class="lang-toml"># IP address of the external voice server used to receive the alt:V servers voice connection
