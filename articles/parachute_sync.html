@@ -146,7 +146,7 @@
     // return false;
 });
 
-alt.on(&quot;clientDeleteObject&quot;, () =&gt; {
+alt.on(&quot;clientDeleteObject&quot;, (player) =&gt; {
     alt.log(&quot;Client:&quot;, player.name, &quot;deleting object&quot;);
 
     // this one is also cancellable
