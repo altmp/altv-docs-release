@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Ped API </title>
+    <title>Parachute sync </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Ped API ">
+    <meta name="title" content="Parachute sync ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#ped-api">Ped API</a><ul class="level2 nav bs-docs-sidenav ped-api"><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#example">Example</a></li></ul></li><li><a href="#local-ped-api">Local Ped API</a><ul class="level3 nav bs-docs-sidenav local-ped-api"><li><a href="#usage-1">Usage</a><ul class="level4 nav bs-docs-sidenav usage-1"><li><a href="#example-1">Example</a></li></ul></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#parachute-sync">Parachute sync</a><ul class="level2 nav bs-docs-sidenav parachute-sync"><li><a href="#how-to-use">How to use</a><ul class="level3 nav bs-docs-sidenav how-to-use"><li><a href="#js-example">JS example</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -127,90 +127,31 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/ped.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/parachute_sync.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="ped-api">Ped API</h1>
+<h1 id="parachute-sync">Parachute sync</h1>
 
-<p>Since alt:V Update 15 you are able to create server side streamed &amp; synchronized peds, often also referred as NPCs. These server side created peds can be controlled by assigning tasks to them on client side, which will then automatically be in sync with all players near.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>These peds won't move and drive on their own, they need tasks assigned on client side to actually do something.
-For GTA Online similar behaviour, you will have to implement the logic on your own.</p>
-</div>
-<p>With default server configuration, up to 128 of the closest peds are streamed at the same time. The max streaming values can be edited in the server configuration.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>Streamer entity pool of peds is the same used for streaming players. Regardless whether a ped is a NPC or player, the closest one will be streamed first.</p>
-</div>
-<p>See <a href="configs/server.html">server configuration</a> [maxStreaming] section.</p>
-<br>
-<div class="TIP">
-<h5>Tip</h5>
-<p>See <a href='https://forge.plebmasters.de/peds'>Pleb Masters: Forge</a> for a full list of all peds.</p>
-</div>
-<h2 id="usage">Usage</h2>
-<p><a href="https://docs.altv.mp/js/api/alt-server.Ped.html">Ped class in JS API reference</a><br>
-<a href="https://docs.altv.mp/cs/api/AltV.Net.Elements.Entities.Ped.html">Ped class in C# API reference</a><br></p>
-<h3 id="example">Example</h3>
-<pre><code class="lang-js">// Create server side synced ped looking like a cow
-let ped = new alt.Ped(&quot;A_C_Cow&quot;, new alt.Vector3(0, 0, 70), new alt.Vector3(0, 0, 0));
-</code></pre>
-<p>To assign tasks, you'll need to apply them on the client side of the NetOwner.</p>
-<pre><code class="lang-js">// server side
-ped.netOwner.emit(&quot;ped_task&quot;, ped);
+<p>Since v15 alt:V has parachute sync.</p>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/Q2ltqCsZTPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<h2 id="how-to-use">How to use</h2>
+<p>Object sync is disabled by default, in order to enable it add two event listeners to your code, in JS there are <a href="https://docs.altv.mp/js/api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_clientDeleteObject"><code>clientDeleteObject</code></a> and <a href="https://docs.altv.mp/js/api/alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent_clientRequestObject"><code>clientRequestObject</code></a>.</p>
+<h3 id="js-example">JS example</h3>
+<pre><code class="lang-js">alt.on(&quot;clientRequestObject&quot;, (player, model, position) =&gt; {
+    alt.log(&quot;Client:&quot;, player.name, &quot;requesting object:&quot;, model, position);
 
-// client side
-alt.onServer(&quot;ped_task&quot;, (ped) =&gt; {
-   // Make the specified ped roam within a 10-meter radius of the given coordinates. It will always move to a random location inside the radius, while waiting a minimum of 2 and maximum of 10 seconds before moving.
-   natives.taskWanderInArea(ped, 0, 0, 70, 10, 2, 10);
+    // you can cancel it if needed
+    // return false;
 });
-</code></pre>
-<h2 id="local-ped-api">Local Ped API</h2>
-<p>Its also possible to create local (clientside only) peds that other players won't see.</p>
-<h3 id="usage-1">Usage</h3>
-<p><a href="https://docs.altv.mp/js/api/alt-client.LocalPed.html">LocalPed class in JS API reference</a><br>
-<a href="https://docs.altv.mp/cs/api/AltV.Net.Client.Elements.Entities.LocalPed.html">LocalPed class in C# API reference</a><br></p>
-<h4 id="example-1">Example</h4>
-<p>Clothes shop preview.</p>
-<pre><code class="lang-js">// We don't need streaming enabled
-// because we need to use ped immediately
-const useStreaming = false;
 
-const player = alt.Player.local;
+alt.on(&quot;clientDeleteObject&quot;, () =&gt; {
+    alt.log(&quot;Client:&quot;, player.name, &quot;deleting object&quot;);
 
-const ped = new alt.LocalPed(player.model, player.dimension, player.pos, player.rot, useStreaming);
-
-// More on that below
-alt.Utils.assert(ped.scriptID !== 0);
-
-// Copying appearance, clothes etc. of player to the ped
-native.clonePedToTarget(player, ped);
-
-// Now we can change clothes of ped
-alt.setPedDlcClothes(ped.scriptID, 0, 11, 1, 0);
-</code></pre>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>It is important to note that the ped may not be spawned immediately due to model loading or streaming, in the above example the ped is spawned immediately (supposedly, that's why we have an <code>alt.Utils.assert</code>) because the player model is already loaded and streaming is disabled.</p>
-</div>
-<p>Waiting for ped to spawn due to model loading and streaming.</p>
-<pre><code class="lang-js">const model = &quot;player_zero&quot;;
-const dimension = alt.defaultDimension; // 0 dimension
-const pos = new alt.Vector3(0, 0, 71);
-const rot = alt.Vector3.zero;
-const useStreaming = true;
-
-const ped = new alt.LocalPed(model, dimension, pos, rot, useStreaming);
-
-// Waiting until ped spawns for 5 seconds or rejecting current promise
-// (timeout value is not required, 2 seconds by default in v15)
-await ped.waitForSpawn(5000);
-
-// ped.scripID is now valid and we can use it
-alt.setPedDlcClothes(ped.scriptID, 0, 11, 1, 0);
+    // this one is also cancellable
+    // return false;
+});
 </code></pre>
 </article>
                     </div>
