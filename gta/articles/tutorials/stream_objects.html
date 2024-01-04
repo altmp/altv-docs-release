@@ -157,15 +157,17 @@ To avoid those crashes, follow those rules for naming the resource:</p>
 <li>Extract the archive like below:
 <ul>
 <li>Place all <code>ydr</code>, <code>yft</code>, <code>ytd</code> and other assets in the folder <code>stream\assets\</code>. For organizational reasons, these files can be distributed into subfolders</li>
-<li>Place all <code>ytyp</code> files into the folder <code>stream\</code></li>
+<li>Place all <code>ytyp</code> files into the folder <code>stream\assets\</code>. Like other files can be distributed into subfolder.</li>
 </ul>
 </li>
 <li>You have to specify the ytyp files in the resources stream.toml. More information at the bottom of this article</li>
 </ol>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>If your resource does not contain ytyp files it is not possible to spawn the objects using natives.<br>
-The Data Files List and examples can be found <a href="https://docs.altv.mp/gta/articles/references/data-files.html">here</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>'DLC_ITYP_REQUEST'/'.ytyp' is a special case in [meta] declaration.<br>
+It must be in the files folder like the object data.<br>
+If it doesn't load, check the path to the file including upper/lower case in [meta].<br>
+Only the auto load is controlled via the [meta] declaration (you save the <a href="https://docs.altv.mp/js/api/alt-client.html#_altmp_altv_types_alt_client_loadYtyp">alt.loadYtyp</a> in the script)</p>
 </div>
 <h2 id="folder-structure"><strong>Folder Structure</strong></h2>
 <pre><code>altvlogo/

@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#text-label-api">Text Label API</a><ul class="level2 nav bs-docs-sidenav text-label-api"><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#example">Example</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#text-label-api">Text Label API</a><ul class="level2 nav bs-docs-sidenav text-label-api"><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#example">Example</a><ul class="level4 nav bs-docs-sidenav example"><li><a href="#available-formatting-tags">Available formatting tags:</a><ul class="level5 nav bs-docs-sidenav available-formatting-tags"><li><a href="#font">font</a><ul class="level6 nav bs-docs-sidenav font"><li><a href="#attributes">Attributes:</a></li><li><a href="#example-1">Example:</a></li></ul></li><li><a href="#img">img</a><ul class="level6 nav bs-docs-sidenav img"><li><a href="#attributes-1">Attributes:</a></li><li><a href="#supported-image-formats">Supported image formats:</a></li><li><a href="#example-2">Example:</a></li></ul></li><li><a href="#b">b</a><ul class="level6 nav bs-docs-sidenav b"><li><a href="#example-3">Example:</a></li></ul></li><li><a href="#i">i</a><ul class="level6 nav bs-docs-sidenav i"><li><a href="#example-4">Example:</a><ul class="level7 nav bs-docs-sidenav example-4"><li><a href="#u">u</a></li><li><a href="#br">br</a></li></ul></li></ul></li><li><a href="#s">s</a></li></ul></li></ul></li></ul></li><li><a href="#formatting">Formatting</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -140,6 +140,163 @@
 <p><a href="https://docs.altv.mp/js/api/alt-client.TextLabel.html">TextLabel class in JS API reference</a><br>
 <a href="https://docs.altv.mp/cs/api/AltV.Net.Client.Elements.Entities.TextLabel.html">TextLabel class in C# API reference</a><br></p>
 <h3 id="example">Example</h3>
+<pre><code class="lang-js">alt.Font.register(&quot;/segoeuib.ttf&quot;);
+
+const pos = alt.Player.local.pos;
+const rot = alt.Player.local.rot.sub(0, 0, -Math.PI);
+new alt.TextLabel(&quot;Test &lt;i&gt;label&lt;/i&gt;!&quot;, &quot;Segoe UI&quot;, 100, 1, pos, rot, alt.RGBA.white, 2, alt.RGBA.black, true, 10);
+</code></pre>
+<h2 id="formatting">Formatting</h2>
+<p>To achieve multicolored or styled text, or to include an image, Text Label API supports simple formatting, which is done through a set of XML tags.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Tags without a closing tag should end with <code>/&gt;</code>.<br>
+For example: <code>&lt;br /&gt;</code>, <code>&lt;img src=&quot;...&quot; /&gt;</code></p>
+</div>
+<h2 id="available-formatting-tags">Available formatting tags:</h2>
+<h3 id="font"><code>font</code></h3>
+<p>Sets font parameters for text inside.</p>
+<h4 id="attributes">Attributes:</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Required?</th>
+<th>Description</th>
+<th>Format</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size</td>
+<td>no</td>
+<td>Font size (in pixels)</td>
+<td>float</td>
+<td><code>16.0</code></td>
+</tr>
+<tr>
+<td>color</td>
+<td>no</td>
+<td>Text color</td>
+<td>HEX color without #</td>
+<td><code>FF0000</code></td>
+</tr>
+<tr>
+<td>outlineColor</td>
+<td>no</td>
+<td>Outline color</td>
+<td>HEX color without #</td>
+<td><code>00FF00</code></td>
+</tr>
+<tr>
+<td>outline</td>
+<td>no</td>
+<td>Outline width (in pixels)</td>
+<td>float</td>
+<td><code>5.0</code></td>
+</tr>
+<tr>
+<td>face</td>
+<td>no</td>
+<td>Font name</td>
+<td>string</td>
+<td><code>Segoe UI</code></td>
+</tr>
+<tr>
+<td>weight</td>
+<td>no</td>
+<td>Font weight</td>
+<td>int</td>
+<td><code>500</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-1">Example:</h4>
+<pre><code class="lang-xml">Nice &lt;font color=&quot;FF0000&quot;&gt;red&lt;/font&gt; text!
+</code></pre>
+<h3 id="img"><code>img</code></h3>
+<p>Allows to insert an image into the text.</p>
+<h4 id="attributes-1">Attributes:</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Required?</th>
+<th>Description</th>
+<th>Format</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>src</td>
+<td>yes</td>
+<td>Image path[^1]</td>
+<td>string</td>
+<td><code>/test.png</code></td>
+</tr>
+<tr>
+<td>width</td>
+<td>no</td>
+<td>Image width</td>
+<td>float</td>
+<td><code>60</code></td>
+</tr>
+<tr>
+<td>height</td>
+<td>no</td>
+<td>Image height</td>
+<td>float</td>
+<td><code>80</code></td>
+</tr>
+<tr>
+<td>baseline</td>
+<td>no</td>
+<td>Image baseline[^2]</td>
+<td>float</td>
+<td><code>0.1</code></td>
+</tr>
+</tbody>
+</table>
+<p>[^1]: Image path is resolved from the creating resource, or asset pack. For example:
+<code>/test.png</code> - test.png in the root of creating resource;
+<code>@demo/test.png</code> - test.png in the root of asset-pack resource named <code>demo</code></p>
+<p>[^2]: Baseline determines which location on image (relative to height, 0.0 is top edge, 1.0 is bottom edge) will be located om the text baseline (bottom text line) level.
+This parameter can be used to align image to the surrounding text. By default baseline is set to <code>0.5</code>.</p>
+<h4 id="supported-image-formats">Supported image formats:</h4>
+<ul>
+<li><code>png</code></li>
+<li><code>jpg</code></li>
+<li><code>bmp</code></li>
+<li><code>tga</code></li>
+</ul>
+<h4 id="example-2">Example:</h4>
+<pre><code class="lang-xml">alt:V Multiplayer &lt;img src=&quot;@demo/logo.png&quot; width=&quot;80&quot; baseline=&quot;0.9&quot; /&gt;
+</code></pre>
+<h3 id="b"><code>b</code></h3>
+<p>Makes text <strong>bold</strong> (font weight 700). Has more priority than <code>font</code>.</p>
+<h4 id="example-3">Example:</h4>
+<pre><code class="lang-xml">This text is &lt;b&gt;bold&lt;/b&gt;
+</code></pre>
+<h3 id="i"><code>i</code></h3>
+<p>Makes text display as <em>italic</em>.</p>
+<h4 id="example-4">Example:</h4>
+<pre><code class="lang-xml">This text is &lt;i&gt;italic&lt;/i&gt;
+</code></pre>
+<h3 id="s"><code>s</code></h3>
+<p>Makes text display as crossed out (strikethrough: <del>example</del>).</p>
+<pre><code class="lang-xml">This text is &lt;s&gt;crossed out&lt;/s&gt;
+</code></pre>
+<h3 id="u"><code>u</code></h3>
+<p>Displays a <u>line under the text</u></p>
+<pre><code class="lang-xml">This text is &lt;u&gt;underlined&lt;/u&gt;
+</code></pre>
+<h3 id="br"><code>br</code></h3>
+<p>Inserts a newline character. Added for convinience, normal newline character is also supported.</p>
+<pre><code class="lang-xml">Line 1&lt;br /&gt;Line 2
+Line 3
+</code></pre>
 </article>
                     </div>
 

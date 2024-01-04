@@ -171,7 +171,7 @@ For more info see: <a href="../../getting-started/create-script.html">Create scr
 </div>
 <pre><code class="lang-csharp">public class MyScript : IScript
 {
-    [ScriptEvent(ScriptEventType.StartProjectile)]
+    [ScriptEvent(ScriptEventType.NetOwnerChange)]
     public void OnNetOwnerChange(IEntity entity, IPlayer oldNetOwner, IPlayer newNetOwner)
     {
         // ...
