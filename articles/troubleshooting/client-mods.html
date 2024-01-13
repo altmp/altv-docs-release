@@ -6,11 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate PlayerEnterVehicleAsyncDelegate
-   </title>
+    <title>Client mods </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Delegate PlayerEnterVehicleAsyncDelegate
-   ">
+    <meta name="title" content="Client mods ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -107,14 +105,12 @@
 
                 <div class="content-region" role="main">
 
-                    <div class="content-column delegate">
+                    <div class="content-column Conceptual">
 
                             
-                            <div class="sideaffix hide-when-search empty" data-noindex="" style="display: none;">
+                            <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix">
-                                <div></div>
-                              </div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#client-mods">Client mods</a><ul class="level2 nav bs-docs-sidenav client-mods"><li><a href="#activate-the-mod-support">Activate the mod support</a></li><li><a href="#enable-mods">Enable mods</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -126,73 +122,50 @@
                               <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
-                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Async.Events.PlayerEnterVehicleAsyncDelegate">
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
 
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/09c0b120675c22da8f67e45aaea8e5231a650200/api/AltV.Net.Async/Events/Events.cs/#L42">View Source</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Events_PlayerEnterVehicleAsyncDelegate.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Events.PlayerEnterVehicleAsyncDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/troubleshooting/client-mods.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-  
-  
-  <h1 id="AltV_Net_Async_Events_PlayerEnterVehicleAsyncDelegate" data-uid="AltV.Net.Async.Events.PlayerEnterVehicleAsyncDelegate" class="text-break">Delegate PlayerEnterVehicleAsyncDelegate
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Async.Events.html">AltV.Net.Async.Events</a></h6>
-  <h6><strong>Assembly</strong>: AltV.Net.Async.dll</h6>
-  <h5 id="AltV_Net_Async_Events_PlayerEnterVehicleAsyncDelegate_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate Task PlayerEnterVehicleAsyncDelegate(IVehicle vehicle, IPlayer player, byte seat);</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
-        <td><span class="parametername">vehicle</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
-        <td><span class="parametername">player</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Byte</span></td>
-        <td><span class="parametername">seat</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+<h1 id="client-mods">Client mods</h1>
+
+<p>In alt:V version 16, we've introduced a mod folder, allowing the use of Reshade &amp; ENB mods. Note that RPF files are not supported in this folder.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>While we offer the capability to run certain mods through the mod folder, be aware that we do not provide support for these mods.
+If you encounter any issues while using them, you will be responsible for resolving them.
+We do not develop these mods and are not familiar with their internal workings, making it impossible for us to diagnose or address any related problems.</p>
+</div>
+<blockquote>
+<p>[!INFO]
+Mods can be auto-disabled in alt:V during repeated crashes or stress tests for stability.</p>
+</blockquote>
+<h2 id="activate-the-mod-support">Activate the mod support</h2>
+<p>To enable mod support in alt:V, follow these steps:</p>
+<ol>
+<li>Navigate to your alt:V directory on your computer.</li>
+<li>Open the <a href="../configs/client.html">altv.toml</a> file with a text editor.</li>
+<li>Look for the line enableModDirectory.</li>
+</ol>
+<ul>
+<li>If it exists, change its value to true.</li>
+<li>If it doesn't exist, add enableModDirectory = true at the bottom of the file.</li>
+</ul>
+<ol start="4">
+<li>Save the changes to the altv.toml file.</li>
+</ol>
+<p>Once you've made these changes, mod support will be activated, allowing you to use the mods from the dedicated mod folder.</p>
+<h2 id="enable-mods">Enable mods</h2>
+<p>Activating mods in alt:V is straightforward. Follow these steps to get started:</p>
+<ol>
+<li>Inside your alt:V directory, create a new folder and name it mods.</li>
+<li>Place all the mod files into this mods folder. For mods like Reshade and ENB, this includes all related files such as *.dll, *.ini, *.fx, and any other relevant files or directories associated with the mods.</li>
+</ol>
 </article>
                     </div>
 
