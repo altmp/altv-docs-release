@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#text-label-api">Text Label API</a><ul class="level2 nav bs-docs-sidenav text-label-api"><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#example">Example</a><ul class="level4 nav bs-docs-sidenav example"><li><a href="#available-formatting-tags">Available formatting tags:</a><ul class="level5 nav bs-docs-sidenav available-formatting-tags"><li><a href="#font">font</a><ul class="level6 nav bs-docs-sidenav font"><li><a href="#attributes">Attributes:</a></li><li><a href="#example-1">Example:</a></li></ul></li><li><a href="#img">img</a><ul class="level6 nav bs-docs-sidenav img"><li><a href="#attributes-1">Attributes:</a></li><li><a href="#supported-image-formats">Supported image formats:</a></li><li><a href="#example-2">Example:</a></li></ul></li><li><a href="#b">b</a><ul class="level6 nav bs-docs-sidenav b"><li><a href="#example-3">Example:</a></li></ul></li><li><a href="#i">i</a><ul class="level6 nav bs-docs-sidenav i"><li><a href="#example-4">Example:</a><ul class="level7 nav bs-docs-sidenav example-4"><li><a href="#u">u</a></li><li><a href="#br">br</a></li></ul></li></ul></li><li><a href="#s">s</a></li></ul></li></ul></li></ul></li><li><a href="#formatting">Formatting</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#text-label-api">Text Label API</a><ul class="level2 nav bs-docs-sidenav text-label-api"><li><a href="#usage">Usage</a></li><li><a href="#server-structure">Server structure</a><ul class="level3 nav bs-docs-sidenav server-structure"><li><a href="#example">Example</a><ul class="level4 nav bs-docs-sidenav example"><li><a href="#available-formatting-tags">Available formatting tags:</a><ul class="level5 nav bs-docs-sidenav available-formatting-tags"><li><a href="#font">font</a><ul class="level6 nav bs-docs-sidenav font"><li><a href="#attributes">Attributes:</a></li><li><a href="#example-1">Example:</a></li></ul></li><li><a href="#img">img</a><ul class="level6 nav bs-docs-sidenav img"><li><a href="#attributes-1">Attributes:</a></li><li><a href="#supported-image-formats">Supported image formats:</a></li><li><a href="#example-2">Example:</a></li></ul></li><li><a href="#b">b</a><ul class="level6 nav bs-docs-sidenav b"><li><a href="#example-3">Example:</a></li></ul></li><li><a href="#i">i</a><ul class="level6 nav bs-docs-sidenav i"><li><a href="#example-4">Example:</a><ul class="level7 nav bs-docs-sidenav example-4"><li><a href="#u">u</a></li><li><a href="#br">br</a></li></ul></li></ul></li><li><a href="#s">s</a></li></ul></li></ul></li></ul></li><li><a href="#formatting">Formatting</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -134,18 +134,70 @@
 
 <h1 id="text-label-api">Text Label API</h1>
 
-<p>Since alt:V Update 15 there are classes for creating client side text labels. These client side text labels are easier to create and use, as they are automatically streamed on client side.</p>
-<p>Text labels are texts that are visually created in 3D space and can be used for all sorts of things.</p>
+<p>Since alt:V Update 15 there are classes for creating client side text labels. These client side text labels are easier to create and use, as they are automatically streamed on client side.
+Text labels are texts that are visually created in 3D space and can be used for all sorts of things. Be sure to import the font you are trying to use into your <a href="https://docs.altv.mp/js/articles/create-your-first-resource.html">resource</a>.</p>
 <h2 id="usage">Usage</h2>
 <p><a href="https://docs.altv.mp/js/api/alt-client.TextLabel.html">TextLabel class in JS API reference</a><br>
 <a href="https://docs.altv.mp/cs/api/AltV.Net.Client.Elements.Entities.TextLabel.html">TextLabel class in C# API reference</a><br></p>
-<h3 id="example">Example</h3>
-<pre><code class="lang-js">alt.Font.register(&quot;/segoeuib.ttf&quot;);
-
-const pos = alt.Player.local.pos;
-const rot = alt.Player.local.rot.sub(0, 0, -Math.PI);
-new alt.TextLabel(&quot;Test &lt;i&gt;label&lt;/i&gt;!&quot;, &quot;Segoe UI&quot;, 100, 1, pos, rot, alt.RGBA.white, 2, alt.RGBA.black, true, 10);
+<h2 id="server-structure">Server structure</h2>
+<p>We'll go on by explaining the general server structure and how to add a custom font. This below is just a example, you can also import a font inside your resource directory by using relative path.</p>
+<pre><code>server/
+├── cache/
+├── data/
+├── modules/
+├── resources/
+    ├── resource1/
+    ├── segoeuib.ttf
+├── altv-server.exe
+├── libnode.dll
+├── server.toml
 </code></pre>
+<h3 id="example">Example</h3>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tab1-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-0" data-tab="tab1-0" tabindex="0" aria-selected="true">JS Module</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tab1-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-1" data-tab="tab1-1" tabindex="-1">C# Module</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_tab1-0" role="tabpanel" data-tab="tab1-0">
+
+<pre><code class="lang-js">const labelPos = new alt.Vector3(-4.75, 2.497, 71.217);
+const labelRot = new alt.Vector3(0, 0, -0.253);
+const labelColor = new alt.RGBA(255, 255, 255, 255);
+const labelOutlineColor = new alt.RGBA(0, 0, 0, 80);
+const labelFontSize = 32;
+const labelFontScale = 2;
+const labelOutlineWidth = .25;
+
+alt.once('resourceStart', () =&gt; {
+  alt.Font.register('mycustomfont.ttf');
+
+  new alt.TextLabel('Welcome to alt:V v16', 'Segoe UI', labelFontSize, labelFontScale, labelPos, labelRot, labelColor, labelOutlineWidth, labelOutlineColor);
+});
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tab1-1" role="tabpanel" data-tab="tab1-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-cs">var labelPos = new Position(-4.75f, 2.497f, 71.217f);
+var labelRot = new Rotation(0f, 0f, -0.253f);
+var labelColor = new Rgba(255, 255, 255, 255);
+var labelOutlineColor = new Rgba(0, 0, 0, 80);
+var labelFontSize = 32f;
+var labelFontScale = 2f;
+var labelOutlineWidth = 0.25f;
+        
+Alt.OnAnyResourceStart += _ =&gt;
+{
+  Alt.RegisterFont(&quot;mycustomfont.ttf&quot;);
+
+  Alt.CreateTextLabel(&quot;Welcome to alt:V v16&quot;, &quot;Segoe UI&quot;, labelFontSize, labelFontScale, labelPos, labelRot, labelColor, labelOutlineWidth, labelOutlineColor, false, 0);
+};
+</code></pre>
+</section>
+</div>
 <h2 id="formatting">Formatting</h2>
 <p>To achieve multicolored or styled text, or to include an image, Text Label API supports simple formatting, which is done through a set of XML tags.</p>
 <div class="WARNING">
