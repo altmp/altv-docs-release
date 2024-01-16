@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#client-mods">Client mods</a><ul class="level2 nav bs-docs-sidenav client-mods"><li><a href="#activate-the-mod-support">Activate the mod support</a></li><li><a href="#enable-mods">Enable mods</a></li><li><a href="#rpf-files">RPF Files</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#client-mods">Client mods</a><ul class="level2 nav bs-docs-sidenav client-mods"><li><a href="#remarks">Remarks</a></li><li><a href="#guide">Guide</a><ul class="level3 nav bs-docs-sidenav guide"><li><a href="#enabling-mod-support">Enabling mod support</a></li><li><a href="#adding-mods">Adding mods</a></li><li><a href="#modifying-game-files">Modifying game files</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -134,40 +134,57 @@
 
 <h1 id="client-mods">Client mods</h1>
 
-<p>In alt:V version 16, we've introduced a mod folder, allowing the use of Reshade &amp; ENB mods. Note that RPF files are not supported in this folder.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>While we offer the capability to run certain mods through the mod folder, be aware that we do not provide support for these mods.
-If you encounter any issues while using them, you will be responsible for resolving them.
-We do not develop these mods and are not familiar with their internal workings, making it impossible for us to diagnose or address any related problems.</p>
+<p>In alt:V version 16 we've introduced a mod folder allowing the usage of Reshade &amp; ENB.<br>
+Note that RPF files are not supported in this folder, those still belong into the game directory.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>While we offer the capability to run certain mods through the mod folder, be aware that we do <strong>not</strong> provide support for client-side mods.<br>
+If you encounter any issues while using them, it's on you to resolve them.</p>
 </div>
-<div class="TIP">
-<h5>Tip</h5>
+<div class="NOTE">
+<h5>Note</h5>
 <p>Mods can be auto-disabled in alt:V during repeated crashes or stress tests for stability.</p>
 </div>
-<h2 id="activate-the-mod-support">Activate the mod support</h2>
-<p>To enable mod support in alt:V, follow these steps:</p>
-<ol>
-<li>Navigate to your alt:V directory on your computer.</li>
-<li>Open the <a href="../configs/client.html">altv.toml</a> file with a text editor.</li>
-<li>Look for the line enableModDirectory.</li>
-</ol>
+<h2 id="remarks">Remarks</h2>
 <ul>
-<li>If it exists, change its value to true.</li>
-<li>If it doesn't exist, add enableModDirectory = true at the bottom of the file.</li>
+<li>We don't support mods, we only provide you a possibility to install them.</li>
+<li>Modifying the game files is entirely at your own risk. Be aware that outdated mods may lead to game instability or crashes.</li>
+<li>Playing GTA:Online with a modified game might get you banned.</li>
+<li>Certain modifications, such as those altering weapons or audio, can be detected by the alt:V server. Using such mods may result in a ban, so always verify with the servers team whether mods are permitted before using them.</li>
 </ul>
-<ol start="4">
-<li>Save the changes to the altv.toml file.</li>
-</ol>
-<p>Once you've made these changes, mod support will be activated, allowing you to use the mods from the dedicated mod folder.</p>
-<h2 id="enable-mods">Enable mods</h2>
-<p>Activating mods in alt:V is straightforward. Follow these steps to get started:</p>
+<h2 id="guide">Guide</h2>
+<h3 id="enabling-mod-support">Enabling mod support</h3>
+<p>As first step we have to enable the mod directory support in our <a href="../configs/client.html">altv.toml</a>:</p>
 <ol>
-<li>Inside your alt:V directory, create a new folder and name it mods.</li>
-<li>Place all the mod files into this mods folder. For mods like Reshade and ENB, this includes all related files such as *.dll, *.ini, *.fx, and any other relevant files or directories associated with the mods.</li>
+<li>Navigate to your alt:V directory</li>
+<li>Open the altv.toml file with a text editor</li>
+<li>Look for the line <code>enableModDirectory</code>
+<ul>
+<li>If it exists, change its value to <code>true</code></li>
+<li>If it doesn't exist, add <code>enableModDirectory = true</code> at the bottom of the file</li>
+</ul>
+</li>
+<li>Save the changes to the altv.toml file</li>
 </ol>
-<h2 id="rpf-files">RPF Files</h2>
-<p>The RPF files are placed in the GTA directory as usual. They do not belong in the mod folder</p>
+<h3 id="adding-mods">Adding mods</h3>
+<p>To add new mods simply put their files into the mods folder:</p>
+<ol>
+<li>Navigate to your alt:V directory</li>
+<li>If the directory <code>mods</code> doesn't exist there, create it</li>
+<li>Place the mod and it's related files (e.g. *.dll, *.ini, *.fx and other relevant files) into the mods folder
+<ul>
+<li>Remember that RPF files don't belong into this directory, see next step</li>
+</ul>
+</li>
+</ol>
+<h3 id="modifying-game-files">Modifying game files</h3>
+<blockquote>
+<p>[!CRITICAL]
+Always take a backup of the files you replace.<br>
+If the mod is outdated after a GTA update it is very likely that it will crash on start.</p>
+</blockquote>
+<p>If your mod comes with modified game files (usually in the form of *.rpf files), these need to be changed in the GTA directory.<br>
+RPF files in the mods folder are ignored and won't be processed further.</p>
 </article>
                     </div>
 
