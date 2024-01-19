@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#setup-cdn">Setup CDN</a></li><li><a href="#step-by-step-tutorial">Step-by-Step Tutorial</a><ul class="level2 nav bs-docs-sidenav step-by-step-tutorial"><li><a href="#example-values">Example values</a></li><li><a href="#step-by-step-example">Step-by-Step Example</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#setup-cdn">Setup CDN</a></li><li><a href="#step-by-step-tutorial">Step-by-Step Tutorial</a><ul class="level2 nav bs-docs-sidenav step-by-step-tutorial"><li><a href="#example-values">Example values</a></li><li><a href="#step-by-step-example">Step-by-Step Example</a></li><li><a href="#cdn-meta-file">CDN meta file</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -170,9 +170,21 @@
 <li>Add <code>useCdn = true</code> to <code>server.toml</code>.</li>
 <li>Add <code>cdnUrl = &quot;http://connect.example.com&quot;</code> to <code>server.toml</code>.</li>
 <li>Start you server with params <code>--host 127.0.0.1 --port 7788 --justpack</code></li>
-<li>Add all generated files from the folder <code>cdn_upload</code> to your CDN Server, the files should be placed in the root of the domain. (You should be abble to access <code>connect.json</code> under <code>http://connect.example.com/connect.json</code>).</li>
+<li>Add all generated files from the folder <code>cdn_upload</code> to your CDN server, the files should be placed in the root of the domain. (You should be abble to access <code>connect.json</code> under <code>http://connect.example.com/connect.json</code>).</li>
 <li>For direct connect use your cdnUrl <code>connect.example.com</code></li>
 </ol>
+<h2 id="cdn-meta-file">CDN meta file</h2>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>With alt:V 16.0 a new file called <code>cdn-meta.bin</code> got added to the process.<br>
+Make sure to keep this file in your server's bin directory.</p>
+</div>
+<p>The <code>cdn-meta.bin</code> file is an important file in your server's bin folder, containing information about custom vehicles, peds and weapons.</p>
+<p>This file has 2 primary purposes:</p>
+<ul>
+<li>it stops the server from parsing this data on every start</li>
+<li>you don't need to have these resources directly on your server, only on CDN</li>
+</ul>
 </article>
                     </div>
 
