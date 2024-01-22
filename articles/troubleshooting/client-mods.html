@@ -154,7 +154,8 @@ If you encounter any issues while using them, it's on you to resolve them.</p>
 </ul>
 <h2 id="guide">Guide</h2>
 <h3 id="enabling-mod-support">Enabling mod support</h3>
-<p>As first step we have to enable the mod directory support in our <a href="../configs/client.html">altv.toml</a>:</p>
+<p>As first step we have to enable the mod directory support in our <a href="../configs/client.html">altv.toml</a>, which can be enabled by clicking <a href="altv://action/setcfg?enableModDirectory=true">here</a>.
+If the automatic activation doesn't work, follow the those steps to manually enable it:</p>
 <ol>
 <li>Navigate to your alt:V directory</li>
 <li>Open the altv.toml file with a text editor</li>
@@ -167,21 +168,19 @@ If you encounter any issues while using them, it's on you to resolve them.</p>
 <li>Save the changes to the altv.toml file</li>
 </ol>
 <h3 id="adding-mods">Adding mods</h3>
-<p>To add new mods simply put their files into the mods folder:</p>
-<ol>
-<li>Navigate to your alt:V directory</li>
-<li>If the directory <code>mods</code> doesn't exist there, create it</li>
-<li>Place the mod and it's related files (e.g. *.dll, *.ini, *.fx and other relevant files) into the mods folder
-<ul>
-<li>Remember that RPF files don't belong into this directory, see next step</li>
-</ul>
-</li>
-</ol>
+<p>To add new mods simply put their files into the mods folder.
+You can open this by clicking <a href="altv://action/open?dir=mods">here</a> or navigating to your alt:V directory and then the <code>mods</code> directory.
+If the directory doesn't exist, create it yourself.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Place the mod and it's related files (e.g. *.dll, *.ini, *.fx and other relevant files) into the mods folder.<br>
+Remind that RPF files don't belong into this directory, see next step.</p>
+</div>
 <h3 id="modifying-game-files">Modifying game files</h3>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>Always take a backup of the files you replace.<br>
-If the mod is outdated after a GTA update it is very likely that it will crash on start.</p>
+If the mod is outdated after a GTA update it is very likely that the game will crash on start.</p>
 </div>
 <p>If your mod comes with modified game files (usually in the form of *.rpf files), these need to be changed in the GTA directory.<br>
 RPF files in the mods folder are ignored and won't be processed further.</p>
