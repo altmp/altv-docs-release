@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>15.0-Release </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="15.0-Release ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#150-release">15.0-Release</a><ul class="level2 nav bs-docs-sidenav 150-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#breaking-changes-1">Breaking changes</a></li><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li><li><a href="#fixed-2">Fixed</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-3">Breaking changes</a></li><li><a href="#added-3">Added</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes-4">Breaking changes</a></li><li><a href="#fixed-3">Fixed</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/changelogs/15_0.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="150-release">15.0-Release</h1>
+
+<div class="TIP">
+<h5>Tip</h5>
+<p>This update was released on 20.10.2023</p>
+</div>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- 15.1:
+   - Fixed serverlist player count sort
+- 15.2:
+   - UI Fixes
+- 15.3:
+   - Fixes if alt:V path included invalid characters
+- 15.4:
+   - Fixed config parsing
+- 15.5:
+   - Temporary disabled backup
+- 15.6:
+   - print stacktrace on crash
+- 15.7:
+   - Fixed disconnect messages
+- 15.19:
+   - Improved startup
+- 15.20:
+   - Improved cloudauth
+- 15.21:
+   - added removeHeadBlendData method to player
+   - Improved cloudauth
+- 15.22:
+   - Improved model loading
+- 15.24:
+   - Crashes on game starting
+- 15.28:
+   - Localizitation for crash reporter
+- 15.31:
+   - Print error on asset errror
+- 15.32:
+   - Fix Voice chat dimensions
+- 15.33:
+   - Fix distorsion with noise suppression enabled
+- 15.36:
+   - Fix voicechat crackles with louad sounds and normalization enabled
+- 15.37:
+   - Fix vehicle pools
+- 15.38:
+   - Improve asia region support
+- 15.40:
+   - Fix colshape delete &amp; create in same tick
+- 15.41:
+   - Fix infinite sprint
+   - Improve modelloading
+   - Fix total events received
+- 15.48:
+   - Fix Stream synced meta script event delete new value
+- 15.49:
+   - Increase weapon component info pool
+- 15.57:
+   - Always reconnect to masterlist on failure
+</code></pre>
+</div>
+<h2 id="client">Client</h2>
+<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Renamed Object to LocalObject
+- .id represents local id now, if you need same id as on server use .remoteID
+- getPermissionState returns bool now
+- setArtificialLightsState has no effect anymore, use DisableEmissiveLightsRendering config flag instead
+- Weapons no more be synced clienside, use server side methods instead. Ammo set by the server will override ammo set by client.
+- client to server events can't be more then 8kb
+</code></pre>
+</div>
+<h3 id="added">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- mute loading music
+- DISABLE_VEHICLE_ENGINE_SHUTDOWN_ON_LEAVE configflag to keep engines on when leaving a vehicle
+- FORCE_RENDER_SNOW configflag to enable snow on any weather
+- FORCE_HIDE_NIGHT_PROPS &amp; FORCE_SHOW_NIGHT_PROPS
+- DISABLE_EMISSIVE_LIGHTS_RENDERING configflag to enable / disable emissive lights
+- audio, checkpoint, webview all getter
+- audio, webview, httpclient, websocketclient id getter
+- audio, blip remoteid getter
+- worldObjectPositionChange, worldObjectStreamIn &amp; worldObjectStreamOut event
+- entityHitEntity event
+- audio filter, colshape, textlabel, weaponObject api
+- dimension getter, position &amp; rotation setter for localplayer
+- httpclient, rmldocument, websocketclient, webview, checkpoint getbyID method
+- blip getByScriptID method
+- multiple webviews can be focused
+- resource config getter
+- vehicle rpm setter
+- warning if gta systems have performance issues
+- overwrite all game meta &amp; dat files
+- DISABLE_SP_ENTER_VEHICLE_CLIPSET flag (true by default)
+- extendet texture budget
+- new setter &amp; getter for object, checkpoint
+- localPed &amp; localVehicle api
+- activityInputEnabled, activationLevel, noiseSuppressionEnabled, toggleInput methods
+- Extended Voice API Permission
+- isFullScreen method
+- cef hardware acceleration
+- improve resource loading speed
+- downloadspeed settings
+- entity frozen setter/getter
+- startEnteringVehicle &amp; startLeavingVehicle events
+- webview reload method
+- sourceentity parameter to weaponDamage event
+- gpuAccelerationActive webview getter
+- playerBulletHit event
+- checkpoint icon color getter/setter
+- extend audio api by output classes
+- audiocategory data api
+- all getter for weapondata api
+- gta v backup system
+- resetMinimapComponentPosition method
+- localstorage has method
+- suspensionHeight setter &amp; getter
+- 3d audio output for webview
+- alt.getVersion, alt.getBranch, alt.getLocale in webviews
+- player IsStealthy &amp; IsCrouching getter
+- weaponTintIndex &amp; currentWeapontintindex getter
+- vehicle steeringAngle setter
+- Discord Rich Presence can be deactivated/activated
+- getNetTime method
+- markers api
+- player taskData getter
+- playerStartTalking &amp; playerStopTalking event
+</code></pre>
+</div>
+<h3 id="fixed">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- minimap textures couldn't be replaced
+- ap1_* ytds, vehshare.ytd, hud.ytd, minimap.ytd couldn't be replaced
+- gfx couldn't be replaced
+- cef flickering while marker is visible (native.drawRect(0, 0, 0, 0, 0, 0, 0, 0) workaround is no longer needed)
+- weapon dlc addon crashed the game on connect to the server
+- cef locale detection
+- webview didnt get destroyed
+- wrong reported resource downloadspeed
+- optional permissions
+- cancel button crashed client
+- voiceInputVolume sets volume in reverse
+- ladder sync
+- localplayer micLevel &amp; isTalking getter
+- mouse cursor stucked in the middle of the screen if input was not set to raw
+- crash on invalid rml document input
+- multiple fixes related to the audio api
+- carmodcols can be loaded to use gta v chameleon colors
+- possible crash in getWheelSurfaceMaterial
+- wrong vehicle position on streamin after few restreams
+- playing animation directly after another one wasnt synced
+- entity models are not freed from memory
+- taskSynchronizedScene wasnt synced
+- tattoos disappeared randomly
+- (max)health, (max)armor getter from remoteplayers wasn't always correct
+- parachute sync
+- connect to server via ipv6 adress
+- position of towtruck hook on streamin
+- loadCloudHat native
+- custom numberplate limit
+- vehicle dirt rendering
+</code></pre>
+</div>
+<h2 id="server">Server</h2>
+<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Removed PlayerBeforeConnect event
+- Removed id support for entityinstreamingrange method
+- Removed entityWorkerCount server option
+- playerWeaponChange is not cancable anymore
+</code></pre>
+</div>
+<h3 id="added-1">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- unreliable events
+- vehicleHorn event (cancable)
+- vehicleSiren, playerSpawn event
+- getEntitiesInDimension, getEntitiesInRange, getClosestEntities methods
+- support for singleplayer rpf files
+- extend limit to 65.000 entities (players, vehicles, etc.)
+- colshape &amp; blip, voicechannel id getter
+- checkpoint all getter
+- extend resource limit to 4GB
+- added priority, filter getter &amp; setter for voiceserver
+- player playAnimation, clearTasks, playScenario method
+- streamsyncedmeta for checkpoints
+- vehicle quaternion setter &amp; getter
+- objects Api
+- player socialClubName getter
+- socialClubName info in connectioInfo
+- option (spawnAfterConnect = true) to spawn player automatically at position 0,0,71
+- no-regenerate-rpf-cache cmd line arg
+- error message if justpack gets used without valid host config
+- possible to enable only specific gta dlcs with the dlcWhitelist config option
+- player streamedEntities getter
+- hashClientResourceName server option
+- Modify gamepool size via server config
+- prometheus support
+- Missing maxDistance &amp; isSpatial voicechannel getter
+- streamer, migration, syncSend, syncReceive thread count can be configured in server.toml
+- resource wildcard support in server.toml
+- getWeaponModelInfoByHash method, getAmmoHashForWeaponHash method &amp; weaponmodels.bin file
+- ammo getter &amp; setter method
+- canAttachCars &amp; handlingNameHash to vehicleModelInfo
+- timestamp for entitys
+- hasWeapon, AmmoSpecialType, ammoFlags, ammoMax method for player
+- removeAllAmmo parameter for removeAllWeapons
+- blip dimension setter, blips can be shown to specific players
+- addDecoration, removeDecoration, clearDecorations, getDecorations method for player
+- setVoiceExternalPublic &amp; setVoiceExternal method
+- player netOwnershipDisabled property
+- vehicle brakeLevel, accelerationLevel getter
+- requestSyncedScene, startSyncedScene, stopSyncedScene, updateSyncedScene events
+- vehicle hornActive getter
+- clientDeleteObject &amp; clientRequestObject event
+- connectioninfo text to display text while in queue
+- entities limit can be increased in server.toml
+- playerheal event
+- setter &amp; getter to set streaminglimits &amp; threadcounts
+- vehicle passenger getter
+- cloudauth api
+- givePedScriptedTask event
+- attach api for objects
+- pedDamage, pedDeath, pedHeal events
+- every entity can have its own streaming distance
+- maxClientScriptEventSize &amp; maxServerScriptEventSize config option
+- getLoadedVehicleModels method
+- allowUnknownRPCEvents server config option
+- blooddamage getter &amp; setter
+</code></pre>
+</div>
+<h3 id="fixed-1">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Dead body position sync
+- vehicle angular interpolator
+- vehicle flickers when the netowner changes
+- player model setter removed all weapons
+- setting health directly after model change, left hp at 200
+- maxArmour resetted when player died
+- entity attachto api didnt accept all bone ids
+- voiceserver port config did not apply
+- attachTo was desync on netowner change
+- projectile sync
+- netownerChange event wasnt called when netowner got null
+</code></pre>
+</div>
+<h2 id="server--client">Server &amp; Client</h2>
+<h3 id="breaking-changes-2"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Removed alt.Entity.getByID method
+</code></pre>
+</div>
+<h3 id="added-2">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- getByID &amp; getByRemoteID method for baseobjects
+- getMetaKeys &amp; getSyncedMetaKeys methods
+- ped's Api
+- virtual entitys api
+- isEnteringVehicle, isLeavingVehicle, isOnLadder, isInCover, isInMelee, isParachuting player getter
+- metachange event
+- voiceConnection event
+- getVoiceConnectionState method
+- new blip api methods
+- vehicle steeringAngle getter
+- player hasWeaponComponent method
+- server &lt;-&gt; client rpc api
+</code></pre>
+</div>
+<h3 id="fixed-2">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- radius blip wasn't visible
+- radius blip size property
+</code></pre>
+</div>
+<h2 id="js-module">JS Module</h2>
+<h3 id="breaking-changes-3"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Removed deprecated null in emitClient &amp; emitClientRaw as target parameter
+</code></pre>
+</div>
+<h3 id="added-3">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- (Client) toggleStrictChecks for natives
+- (Server|Client) baseObjectCreate &amp; baseObjectRemove event
+</code></pre>
+</div>
+<h2 id="c-module">C# Module</h2>
+<h3 id="breaking-changes-4"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Removed deprecated Alt.Server property
+- All element constructors are deprecated. Please only use Alt.Create* or AltAsync.Create* instead. In one of the next updates the constructors will be removed.
+- (server) ScriptEvents must now set the required return type. Otherwise a log will be output to the console and the event will not be registered
+</code></pre>
+</div>
+<h3 id="fixed-3">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Fix OnRmlEvent Event
+</code></pre>
+</div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

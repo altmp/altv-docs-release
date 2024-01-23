@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>15.0-Release </title>
+    <title>16.0.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="15.0-Release ">
+    <meta name="title" content="16.0.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#150-release">15.0-Release</a><ul class="level2 nav bs-docs-sidenav 150-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#breaking-changes-1">Breaking changes</a></li><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li><li><a href="#fixed-2">Fixed</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-3">Breaking changes</a></li><li><a href="#added-3">Added</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes-4">Breaking changes</a></li><li><a href="#fixed-3">Fixed</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#1600-release">16.0.0-Release</a><ul class="level2 nav bs-docs-sidenav 1600-release"><li><a href="#server">Server</a></li><li><a href="#client">Client</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,7 +132,7 @@
                                     </ul>
                                 </span>
 
-<h1 id="150-release">15.0-Release</h1>
+<h1 id="1600-release">16.0.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
@@ -140,300 +140,45 @@
 </div>
 <div class="TIP">
 <h5>Tip</h5>
-<p>This update was released on 20.10.2023</p>
-</div>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- 15.1:
-   - Fixed serverlist player count sort
-- 15.2:
-   - UI Fixes
-- 15.3:
-   - Fixes if alt:V path included invalid characters
-- 15.4:
-   - Fixed config parsing
-- 15.5:
-   - Temporary disabled backup
-- 15.6:
-   - print stacktrace on crash
-- 15.7:
-   - Fixed disconnect messages
-- 15.19:
-   - Improved startup
-- 15.20:
-   - Improved cloudauth
-- 15.21:
-   - added removeHeadBlendData method to player
-   - Improved cloudauth
-- 15.22:
-   - Improved model loading
-- 15.24:
-   - Crashes on game starting
-- 15.28:
-   - Localizitation for crash reporter
-- 15.31:
-   - Print error on asset errror
-- 15.32:
-   - Fix Voice chat dimensions
-- 15.33:
-   - Fix distorsion with noise suppression enabled
-- 15.36:
-   - Fix voicechat crackles with louad sounds and normalization enabled
-- 15.37:
-   - Fix vehicle pools
-- 15.38:
-   - Improve asia region support
-- 15.40:
-   - Fix colshape delete &amp; create in same tick
-- 15.41:
-   - Fix infinite sprint
-   - Improve modelloading
-   - Fix total events received
-- 15.48:
-   - Fix Stream synced meta script event delete new value
-- 15.49:
-   - Increase weapon component info pool
-- 15.57:
-   - Always reconnect to masterlist on failure
-</code></pre>
-</div>
-<h2 id="client">Client</h2>
-<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Renamed Object to LocalObject
-- .id represents local id now, if you need same id as on server use .remoteID
-- getPermissionState returns bool now
-- setArtificialLightsState has no effect anymore, use DisableEmissiveLightsRendering config flag instead
-- Weapons no more be synced clienside, use server side methods instead. Ammo set by the server will override ammo set by client.
-- client to server events can't be more then 8kb
-</code></pre>
-</div>
-<h3 id="added">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- mute loading music
-- DISABLE_VEHICLE_ENGINE_SHUTDOWN_ON_LEAVE configflag to keep engines on when leaving a vehicle
-- FORCE_RENDER_SNOW configflag to enable snow on any weather
-- FORCE_HIDE_NIGHT_PROPS &amp; FORCE_SHOW_NIGHT_PROPS
-- DISABLE_EMISSIVE_LIGHTS_RENDERING configflag to enable / disable emissive lights
-- audio, checkpoint, webview all getter
-- audio, webview, httpclient, websocketclient id getter
-- audio, blip remoteid getter
-- worldObjectPositionChange, worldObjectStreamIn &amp; worldObjectStreamOut event
-- entityHitEntity event
-- audio filter, colshape, textlabel, weaponObject api
-- dimension getter, position &amp; rotation setter for localplayer
-- httpclient, rmldocument, websocketclient, webview, checkpoint getbyID method
-- blip getByScriptID method
-- multiple webviews can be focused
-- resource config getter
-- vehicle rpm setter
-- warning if gta systems have performance issues
-- overwrite all game meta &amp; dat files
-- DISABLE_SP_ENTER_VEHICLE_CLIPSET flag (true by default)
-- extendet texture budget
-- new setter &amp; getter for object, checkpoint
-- localPed &amp; localVehicle api
-- activityInputEnabled, activationLevel, noiseSuppressionEnabled, toggleInput methods
-- Extended Voice API Permission
-- isFullScreen method
-- cef hardware acceleration
-- improve resource loading speed
-- downloadspeed settings
-- entity frozen setter/getter
-- startEnteringVehicle &amp; startLeavingVehicle events
-- webview reload method
-- sourceentity parameter to weaponDamage event
-- gpuAccelerationActive webview getter
-- playerBulletHit event
-- checkpoint icon color getter/setter
-- extend audio api by output classes
-- audiocategory data api
-- all getter for weapondata api
-- gta v backup system
-- resetMinimapComponentPosition method
-- localstorage has method
-- suspensionHeight setter &amp; getter
-- 3d audio output for webview
-- alt.getVersion, alt.getBranch, alt.getLocale in webviews
-- player IsStealthy &amp; IsCrouching getter
-- weaponTintIndex &amp; currentWeapontintindex getter
-- vehicle steeringAngle setter
-- Discord Rich Presence can be deactivated/activated
-- getNetTime method
-- markers api
-- player taskData getter
-- playerStartTalking &amp; playerStopTalking event
-</code></pre>
-</div>
-<h3 id="fixed">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- minimap textures couldn't be replaced
-- ap1_* ytds, vehshare.ytd, hud.ytd, minimap.ytd couldn't be replaced
-- gfx couldn't be replaced
-- cef flickering while marker is visible (native.drawRect(0, 0, 0, 0, 0, 0, 0, 0) workaround is no longer needed)
-- weapon dlc addon crashed the game on connect to the server
-- cef locale detection
-- webview didnt get destroyed
-- wrong reported resource downloadspeed
-- optional permissions
-- cancel button crashed client
-- voiceInputVolume sets volume in reverse
-- ladder sync
-- localplayer micLevel &amp; isTalking getter
-- mouse cursor stucked in the middle of the screen if input was not set to raw
-- crash on invalid rml document input
-- multiple fixes related to the audio api
-- carmodcols can be loaded to use gta v chameleon colors
-- possible crash in getWheelSurfaceMaterial
-- wrong vehicle position on streamin after few restreams
-- playing animation directly after another one wasnt synced
-- entity models are not freed from memory
-- taskSynchronizedScene wasnt synced
-- tattoos disappeared randomly
-- (max)health, (max)armor getter from remoteplayers wasn't always correct
-- parachute sync
-- connect to server via ipv6 adress
-- position of towtruck hook on streamin
-- loadCloudHat native
-- custom numberplate limit
-- vehicle dirt rendering
-</code></pre>
+<p>This update was released on 12.01.2024</p>
 </div>
 <h2 id="server">Server</h2>
-<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Removed PlayerBeforeConnect event
-- Removed id support for entityinstreamingrange method
-- Removed entityWorkerCount server option
-- playerWeaponChange is not cancable anymore
-</code></pre>
-</div>
-<h3 id="added-1">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- unreliable events
-- vehicleHorn event (cancable)
-- vehicleSiren, playerSpawn event
-- getEntitiesInDimension, getEntitiesInRange, getClosestEntities methods
-- support for singleplayer rpf files
-- extend limit to 65.000 entities (players, vehicles, etc.)
-- colshape &amp; blip, voicechannel id getter
-- checkpoint all getter
-- extend resource limit to 4GB
-- added priority, filter getter &amp; setter for voiceserver
-- player playAnimation, clearTasks, playScenario method
-- streamsyncedmeta for checkpoints
-- vehicle quaternion setter &amp; getter
-- objects Api
-- player socialClubName getter
-- socialClubName info in connectioInfo
-- option (spawnAfterConnect = true) to spawn player automatically at position 0,0,71
-- no-regenerate-rpf-cache cmd line arg
-- error message if justpack gets used without valid host config
-- possible to enable only specific gta dlcs with the dlcWhitelist config option
-- player streamedEntities getter
-- hashClientResourceName server option
-- Modify gamepool size via server config
-- prometheus support
-- Missing maxDistance &amp; isSpatial voicechannel getter
-- streamer, migration, syncSend, syncReceive thread count can be configured in server.toml
-- resource wildcard support in server.toml
-- getWeaponModelInfoByHash method, getAmmoHashForWeaponHash method &amp; weaponmodels.bin file
-- ammo getter &amp; setter method
-- canAttachCars &amp; handlingNameHash to vehicleModelInfo
-- timestamp for entitys
-- hasWeapon, AmmoSpecialType, ammoFlags, ammoMax method for player
-- removeAllAmmo parameter for removeAllWeapons
-- blip dimension setter, blips can be shown to specific players
-- addDecoration, removeDecoration, clearDecorations, getDecorations method for player
-- setVoiceExternalPublic &amp; setVoiceExternal method
-- player netOwnershipDisabled property
-- vehicle brakeLevel, accelerationLevel getter
-- requestSyncedScene, startSyncedScene, stopSyncedScene, updateSyncedScene events
-- vehicle hornActive getter
-- clientDeleteObject &amp; clientRequestObject event
-- connectioninfo text to display text while in queue
-- entities limit can be increased in server.toml
-- playerheal event
-- setter &amp; getter to set streaminglimits &amp; threadcounts
-- vehicle passenger getter
-- cloudauth api
-- givePedScriptedTask event
-- attach api for objects
-- pedDamage, pedDeath, pedHeal events
-- every entity can have its own streaming distance
-- maxClientScriptEventSize &amp; maxServerScriptEventSize config option
-- getLoadedVehicleModels method
-- allowUnknownRPCEvents server config option
-- blooddamage getter &amp; setter
-</code></pre>
-</div>
-<h3 id="fixed-1">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Dead body position sync
-- vehicle angular interpolator
-- vehicle flickers when the netowner changes
-- player model setter removed all weapons
-- setting health directly after model change, left hp at 200
-- maxArmour resetted when player died
-- entity attachto api didnt accept all bone ids
-- voiceserver port config did not apply
-- attachTo was desync on netowner change
-- projectile sync
-- netownerChange event wasnt called when netowner got null
-</code></pre>
-</div>
-<h2 id="server--client">Server &amp; Client</h2>
-<h3 id="breaking-changes-2"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Removed alt.Entity.getByID method
-</code></pre>
-</div>
-<h3 id="added-2">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- getByID &amp; getByRemoteID method for baseobjects
-- getMetaKeys &amp; getSyncedMetaKeys methods
-- ped's Api
-- virtual entitys api
-- isEnteringVehicle, isLeavingVehicle, isOnLadder, isInCover, isInMelee, isParachuting player getter
-- metachange event
-- voiceConnection event
-- getVoiceConnectionState method
-- new blip api methods
-- vehicle steeringAngle getter
-- player hasWeaponComponent method
-- server &lt;-&gt; client rpc api
-</code></pre>
-</div>
-<h3 id="fixed-2">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- radius blip wasn't visible
-- radius blip size property
-</code></pre>
-</div>
-<h2 id="js-module">JS Module</h2>
-<h3 id="breaking-changes-3"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Removed deprecated null in emitClient &amp; emitClientRaw as target parameter
-</code></pre>
-</div>
-<h3 id="added-3">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- (Client) toggleStrictChecks for natives
-- (Server|Client) baseObjectCreate &amp; baseObjectRemove event
-</code></pre>
-</div>
-<h2 id="c-module">C# Module</h2>
-<h3 id="breaking-changes-4"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Removed deprecated Alt.Server property
-- All element constructors are deprecated. Please only use Alt.Create* or AltAsync.Create* instead. In one of the next updates the constructors will be removed.
-- (server) ScriptEvents must now set the required return type. Otherwise a log will be output to the console and the event will not be registered
-</code></pre>
-</div>
-<h3 id="fixed-3">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Fix OnRmlEvent Event
-</code></pre>
-</div>
+<ul>
+<li>Added config <code>masterlistRelay</code> to server.toml, its default value is <code>&quot;&quot;</code></li>
+<li>Added config <code>mtu</code> to server.toml, its default value is <code>1400</code></li>
+<li>Added config <code>enableSyncedMetaData</code> to server.toml, its default value is <code>true</code></li>
+<li>Added property <code>versionMajor</code> to <code>ConnectionInfo</code> to JS-Module and <code>VersionMajor</code> to <code>IConnectionInfo</code> to C#-Module</li>
+<li>Added property <code>versionMinor</code> to <code>ConnectionInfo</code> to JS-Module and <code>VersionMinor</code> to <code>IConnectionInfo</code> to C#-Module</li>
+<li>Added property <code>modelHash</code> to <code>IVehicleModel</code> to JS-Module and <code>ModelHash</code> to <code>VehicleModelInfo</code> to C#-Module</li>
+<li>Added property <code>modelName</code> to <code>WeaponModelInfo</code> to JS-Module</li>
+<li>Added method <code>setBadge</code> to <code>alt.Vehicle</code> to JS-Module and <code>setBadge</code> to <code>Alt.Vehicle</code> to c#-Module</li>
+<li>Added class <code>VehicleBadgePosition</code> to JS-Module and <code>VehicleBadgePosition</code> to C#-Module</li>
+<li>Added event <code>playerConnectDenied</code> to JS-Module and <code>OnPlayerConnectDeniedEvent</code> in C#-Module</li>
+<li>Added argument <code>count</code> to <code>player.addDecoration</code> to JS-Module and <code>count</code> to <code>Player.AddDecoration</code> to C#-Module</li>
+<li>Deprecated property <code>build</code> from <code>ConnectionInfo</code> in JS-Module</li>
+<li>Removed property <code>MajorVersion</code> from <code>IConnectionInfo</code> in C#-Module</li>
+</ul>
+<h2 id="client">Client</h2>
+<ul>
+<li>Added method <code>alt.getServerTime</code> to JS-Module and <code>alt.ServerTime</code> to C#-Module</li>
+<li>Added method <code>alt.getPoolSize</code> to JS-Module and <code>alt.GetPoolSize</code> to C#-Module</li>
+<li>Added method <code>alt.getPoolCount</code> to JS-Module and <code>alt.GetPoolCount</code> to C#-Module</li>
+<li>Added method <code>alt.getPoolEntities</code> to JS-Module and <code>alt.GetPoolEntities</code> to C#-Module</li>
+<li>Added method <code>alt.getVoicePlayers</code> to JS-Module and <code>alt.GetVoicePlayers</code> to C#-Module</li>
+<li>Added method <code>alt.removeVoicePlayer</code> to JS-Module and <code>alt.RemoveVoicePlayer</code> to C#-Module</li>
+<li>Added method <code>alt.getVoiceSpatialVolume</code> to JS-Module and <code>alt.GetVoiceSpatialVolume</code> to C#-Module</li>
+<li>Added method <code>alt.setVoiceSpatialVolume</code> to JS-Module and <code>alt.SetVoiceSpatialVolume</code> to C#-Module</li>
+<li>Added method <code>alt.getVoiceNonSpatialVolume</code> to JS-Module and <code>alt.GetVoiceNonSpatialVolume</code> to C#-Module</li>
+<li>Added method <code>alt.setVoiceNonSpatialVolume</code> to JS-Module and <code>alt.SetVoiceNonSpatialVolume</code> to C#-Module</li>
+<li>Added method <code>alt.addVoiceFilter</code> to JS-Module and <code>alt.AddVoiceFilter</code> to C#-Module</li>
+<li>Added method <code>alt.removeVoiceFilter</code> to JS-Module and <code>alt.RemoveVoiceFilter</code> to C#-Module</li>
+<li>Added method <code>alt.getVoiceFilter</code> to JS-Module and <code>alt.GetVoiceFilter</code> to C#-Module</li>
+<li>Added method <code>alt.updateClipContext</code> to JS-Module and <code>alt.UpdateClipContext</code> to C#-Module</li>
+<li>Added method <code>getSyncInfo</code> to <code>Entity</code> to JS-Module and <code>SyncInfo</code> to <code>IEntity</code> to C#-Module</li>
+<li>Added method <code>addVolumeEffect</code> to <code>AudioFilter</code> to JS-Module and <code>AddVolumeEffect</code> to <code>AudioFilter</code> to C#-Module</li>
+<li>Added class <code>ISyncInfo</code> to JS-Module and <code>SyncInfo</code> to C#-Module</li>
+<li>Added xml styling support to TextLabel (<a href="https://docs.altv.mp/articles/textlabel.html">more details</a>)</li>
+</ul>
 </article>
                     </div>
 
