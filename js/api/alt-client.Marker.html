@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_client_Marker_constructor">Marker(MarkerType, Vector3, RGBA, boolean, number)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_Marker_all">all</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_visible">visible</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_markerType">markerType</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_color">color</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_scale">scale</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_rot">rot</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_dir">dir</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_isGlobal">isGlobal</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_target">target</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_streamingDistance">streamingDistance</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_isStreamedIn">isStreamedIn</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_faceCamera">faceCamera</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_rotate">rotate</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_bobUpAndDown">bobUpAndDown</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_Marker_getByID">getByID(number)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_client_Marker_constructor">Marker(MarkerType, Vector3, RGBA)</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_constructor_1">Marker(MarkerType, Vector3, RGBA, true, number)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_Marker_all">all</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_visible">visible</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_markerType">markerType</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_color">color</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_scale">scale</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_rot">rot</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_dir">dir</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_isGlobal">isGlobal</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_target">target</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_streamingDistance">streamingDistance</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_isStreamedIn">isStreamedIn</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_faceCamera">faceCamera</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_rotate">rotate</a></li><li><a href="#_altmp_altv_types_alt_client_Marker_bobUpAndDown">bobUpAndDown</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_Marker_getByID">getByID(number)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -223,9 +223,9 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_constructor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.constructor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4028">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4034">View Source</a>
   </span>
-  <h4 id="_altmp_altv_types_alt_client_Marker_constructor" data-uid="@altmp/altv-types.alt-client.Marker.constructor">Marker(MarkerType, Vector3, RGBA, boolean, number)
+  <h4 id="_altmp_altv_types_alt_client_Marker_constructor" data-uid="@altmp/altv-types.alt-client.Marker.constructor">Marker(MarkerType, Vector3, RGBA)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
@@ -234,7 +234,61 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public Marker(type: MarkerType, position: Vector3, color: RGBA, useStreaming?: boolean, streamingDistance?: number): Marker</code></pre>
+    <pre><code class="lang-typeScript hljs">public Marker(type: MarkerType, position: Vector3, color: RGBA): Marker</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-client.MarkerType.html">MarkerType</a></td>
+        <td><em>type</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="alt-client.Vector3.html">Vector3</a></td>
+        <td><em>position</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="alt-client.RGBA.html">RGBA</a></td>
+        <td><em>color</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_constructor_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.constructor_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4034">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Marker_constructor_1" data-uid="@altmp/altv-types.alt-client.Marker.constructor_1">Marker(MarkerType, Vector3, RGBA, true, number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public Marker(type: MarkerType, position: Vector3, color: RGBA, useStreaming: true, streamingDistance: number): Marker</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -271,7 +325,7 @@
         </td>
       </tr>
       <tr>
-        <td><span class="xref">boolean</span></td>
+        <td><span class="xref">true</span></td>
         <td><em>useStreaming</em></td>
         <td>
           
@@ -295,7 +349,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_all.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.all%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4038">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4055">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_all" data-uid="@altmp/altv-types.alt-client.Marker.all">all
   <span class="release-stage public"></span>
@@ -328,7 +382,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_visible.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.visible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4040">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4057">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_visible" data-uid="@altmp/altv-types.alt-client.Marker.visible">visible
   <span class="release-stage public"></span>
@@ -361,7 +415,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_markerType.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.markerType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4042">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4059">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_markerType" data-uid="@altmp/altv-types.alt-client.Marker.markerType">markerType
   <span class="release-stage public"></span>
@@ -394,7 +448,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_color.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4044">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4061">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_color" data-uid="@altmp/altv-types.alt-client.Marker.color">color
   <span class="release-stage public"></span>
@@ -427,7 +481,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_scale.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.scale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4046">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4063">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_scale" data-uid="@altmp/altv-types.alt-client.Marker.scale">scale
   <span class="release-stage public"></span>
@@ -460,7 +514,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_rot.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.rot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4048">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4065">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_rot" data-uid="@altmp/altv-types.alt-client.Marker.rot">rot
   <span class="release-stage public"></span>
@@ -493,7 +547,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_dir.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.dir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4050">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4067">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_dir" data-uid="@altmp/altv-types.alt-client.Marker.dir">dir
   <span class="release-stage public"></span>
@@ -526,7 +580,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_isGlobal.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.isGlobal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4052">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4069">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_isGlobal" data-uid="@altmp/altv-types.alt-client.Marker.isGlobal">isGlobal
   <span class="release-stage public"></span>
@@ -559,7 +613,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_target.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.target%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4054">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4071">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_target" data-uid="@altmp/altv-types.alt-client.Marker.target">target
   <span class="release-stage public"></span>
@@ -592,7 +646,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_streamingDistance.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.streamingDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4056">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4073">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_streamingDistance" data-uid="@altmp/altv-types.alt-client.Marker.streamingDistance">streamingDistance
   <span class="release-stage public"></span>
@@ -625,7 +679,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_isStreamedIn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.isStreamedIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4058">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4075">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_isStreamedIn" data-uid="@altmp/altv-types.alt-client.Marker.isStreamedIn">isStreamedIn
   <span class="release-stage public"></span>
@@ -658,7 +712,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_faceCamera.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.faceCamera%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4060">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4077">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_faceCamera" data-uid="@altmp/altv-types.alt-client.Marker.faceCamera">faceCamera
   <span class="release-stage public"></span>
@@ -691,7 +745,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_rotate.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.rotate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4062">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4079">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_rotate" data-uid="@altmp/altv-types.alt-client.Marker.rotate">rotate
   <span class="release-stage public"></span>
@@ -724,7 +778,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_bobUpAndDown.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.bobUpAndDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4064">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4081">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_bobUpAndDown" data-uid="@altmp/altv-types.alt-client.Marker.bobUpAndDown">bobUpAndDown
   <span class="release-stage public"></span>
@@ -759,7 +813,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Marker_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Marker.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4036">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4053">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Marker_getByID" data-uid="@altmp/altv-types.alt-client.Marker.getByID">getByID(number)
   <span class="release-stage public"></span>
