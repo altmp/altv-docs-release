@@ -150,9 +150,23 @@
 <li>Create a resourcefolder with the following structure below.</li>
 <li>Create a <code>interiorproxies.meta</code> file inside the stream folder in your resourcefolder. You can see below at <code>interiorproxies.meta</code> how the file should look.</li>
 </ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>[meta] declaration excludes special cases like 'DLC_ITYP_REQUEST'/'.ytyp' see -&gt; <a href="https://docs.altv.mp/gta/articles/tutorials/stream_objects.html">Stream Objects</a></p>
+<p>Require inside <code>client-files = [ 'stream/*' ]</code> of <code>resource.toml</code></p>
+<p>Require outside <code>files = [ 'stream/assets/*' ]</code> of <code>stream.toml</code>
+ </p>
+<p>You will get this error if you place them inside <code>files</code></p>
+<blockquote>
+<p>[12:40:47][Error] Can't find asset store for file &quot;interiorproxies.meta&quot;
+ 
+[12:40:47][Error] Can't load asset file &quot;stream/interiorproxies.meta&quot;</p>
+</blockquote>
+</div>
 <h3 id="folder-structure"><strong>Folder Structure</strong></h3>
 <pre><code>i-streamer/
 |-&gt; stream/
+|    |-&gt; assets/
 |    |-&gt; interiorproxies.meta
 |-&gt; resource.toml
 \-&gt; stream.toml
@@ -164,7 +178,7 @@ main: 'stream.toml'
 client-files = [ 'stream/*' ]
 </code></pre>
 <h3 id="streamtoml"><strong>stream.toml</strong></h3>
-<pre><code>files = [ 'stream/*' ]
+<pre><code>files = [ 'stream/assets/*' ]
 
 [meta]
 'stream/interiorproxies.meta' = 'INTERIOR_PROXY_ORDER_FILE'
