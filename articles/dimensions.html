@@ -108,11 +108,9 @@
                     <div class="content-column Conceptual">
 
                             
-                            <div class="sideaffix hide-when-search empty" data-noindex="" style="display: none;">
+                            <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix">
-                                <div></div>
-                              </div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#dimensions">Dimensions</a><ul class="level2 nav bs-docs-sidenav dimensions"><li><a href="#global-dimension">Global Dimension</a><ul class="level3 nav bs-docs-sidenav global-dimension"><li><a href="#examples-js">Examples (JS)</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -149,31 +147,60 @@
 </thead>
 <tbody>
 <tr>
-<td>-2147483647</td>
-<td style="text-align: center;">-1</td>
-<td style="text-align: center;">Public Dimension</td>
-<td style="text-align: center;">This Dimension can see itself, the General Dimension and the Global Dimension (-1 can see 0, -2 can't see -1, 0 can't see -1, -1 can't see 1)</td>
-</tr>
-<tr>
 <td>0</td>
 <td style="text-align: center;">0</td>
-<td style="text-align: center;">General Dimension</td>
-<td style="text-align: center;">This Dimension can only see itself.</td>
-</tr>
-<tr>
-<td>-2147483648</td>
-<td style="text-align: center;">-2147483648</td>
-<td style="text-align: center;">Global Dimension</td>
+<td style="text-align: center;">Default Dimension</td>
 <td style="text-align: center;">This Dimension can only see itself.</td>
 </tr>
 <tr>
 <td>1</td>
 <td style="text-align: center;">2147483647</td>
 <td style="text-align: center;">Private Dimension</td>
-<td style="text-align: center;">This Dimension can only see itself and the Global Dimension (1 can't see 0, 2 can't see 1, 0 can't see 1, 1 can't see -1)</td>
+<td style="text-align: center;">This Dimension can only see itself (1 can't see 0, 2 can't see 1, 0 can't see 1, 1 can't see -1)</td>
+</tr>
+<tr>
+<td>-2147483647</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;">Public Dimension</td>
+<td style="text-align: center;">This Dimension can see itself, the Default Dimension (-1 can see 0, -2 can't see -1, 0 can't see -1, -1 can't see 1)</td>
+</tr>
+<tr>
+<td>-2147483648</td>
+<td style="text-align: center;">-2147483648</td>
+<td style="text-align: center;">Global Dimension</td>
+<td style="text-align: center;">This Dimension is special, see below.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="global-dimension">Global Dimension</h2>
+<p>This dimension can be used to make entity visible in any normal dimension (default, private, public) or to retrieve entities from any dimension.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>It is not recommended to set dimension of players to the global dimension.</p>
+</div>
+<h3 id="examples-js">Examples (JS)</h3>
+<p>Make vehicle visible in any dimension.</p>
+<pre><code class="lang-js">const vehicle = new alt.Vehicle('sultan2', 0, 5, 71, 0, 0, 0);
+vehicle.dimension = alt.globalDimension;
+</code></pre>
+<p>Get vehicles in any dimension.</p>
+<pre><code class="lang-js">const veh1 = new alt.Vehicle('sultan2', 0, 0, 0, 0, 0, 0);
+veh1.dimension = 2;
+const veh2 = new alt.Vehicle('sultan3', 10, 5, 0, 0, 0, 0);
+veh2.dimension = -1;
+
+// getEntitiesInRange won't return entities immediately so we need to wait some time
+await alt.Utils.wait(1000);
+
+// get all vehicles in any dimension around 0, 0, 0 within 100 units
+const entities = alt.getEntitiesInRange(
+    alt.Vector3.zero, // pos
+    100, // range
+    alt.globalDimension, // dimension
+    2 // filter (alt.BaseObjectFilterType.Vehicle)
+);
+alt.log({ entities }); // { entities: [ Vehicle {}, Vehicle {} ] }
+</code></pre>
 </article>
                     </div>
 
