@@ -217,7 +217,7 @@ category.volume = 10;
 <pre><code class="lang-js">const radio = alt.AudioCategory.getForName(&quot;radio&quot;); // Using the game radio audio category as source
 const category = alt.AudioCategory.getForName(&quot;video_editor_weapons_guns_bullet_impacts&quot;); // This will be our target 'custom' audio category
 
-category.volume = 1000;
+category.volume = 10;
 category.distanceRolloffScale = radio.distanceRolloffScale;
 category.plateauRolloffScale = radio.plateauRolloffScale;
 category.occlusionDamping = radio.occlusionDamping;
@@ -233,7 +233,7 @@ category.lowPassFilterCutoff = radio.lowPassFilterCutoff;
 category.highPassFilterCutoff = radio.highPassFilterCutoff;
 
 // Lets use our 'custom' audio category to play audio
-const output = new alt.AudioOutputFrontend(&quot;video_editor_weapons_guns_bullet_impacts&quot;);
+const output = new alt.AudioOutputFrontend(alt.hash(&quot;video_editor_weapons_guns_bullet_impacts&quot;));
 const audio = new alt.Audio(&quot;https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg&quot;);
 audio.addOutput(output);
 audio.play();
